@@ -1,0 +1,13 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "4.25",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "Learning_Project_1",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}

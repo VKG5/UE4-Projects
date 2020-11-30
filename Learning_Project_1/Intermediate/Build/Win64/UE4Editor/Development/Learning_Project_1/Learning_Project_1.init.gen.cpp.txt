@@ -1,0 +1,3 @@
+F:\Programs\UE4\Learning_Project_1\Intermediate\Build\Win64\UE4Editor\Development\Learning_Project_1\Definitions.Learning_Project_1.h
+E:\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+E:\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h

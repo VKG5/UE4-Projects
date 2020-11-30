@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"F:\\Programs\\UE4\\Learning_Project_1\\Source\\Learning_Project_1\\Learning_Project_1.Build.cs",
+		"F:\\Programs\\UE4\\Learning_Project_1\\Source\\Learning_Project_1.Target.cs",
+		"F:\\Programs\\UE4\\Learning_Project_1\\Source\\Learning_Project_1Editor.Target.cs"
+	],
+	"EngineVersion": "4.25.4"
+}
