@@ -1,0 +1,12 @@
+﻿  Using 'git status' to determine working set for adaptive non-unity build (F:\Programs\UE4).
+  Building BuildingEscapeEditor...
+  Using Visual Studio 2019 14.28.29915 toolchain (F:\Microsoft Visual Studio\VC\Tools\MSVC\14.28.29910) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 4 actions with 12 processes...
+    [1/4] WorldPosition.cpp
+    [2/4] UE4Editor-BuildingEscape.lib
+       Creating library F:\Programs\UE4\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\UE4Editor-BuildingEscape.lib and object F:\Programs\UE4\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\UE4Editor-BuildingEscape.exp
+    [3/4] UE4Editor-BuildingEscape.dll
+       Creating library F:\Programs\UE4\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\UE4Editor-BuildingEscape.suppressed.lib and object F:\Programs\UE4\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\UE4Editor-BuildingEscape.suppressed.exp
+    [4/4] BuildingEscapeEditor.target
+  Total time in Parallel executor: 13.00 seconds
+  Total execution time: 13.70 seconds

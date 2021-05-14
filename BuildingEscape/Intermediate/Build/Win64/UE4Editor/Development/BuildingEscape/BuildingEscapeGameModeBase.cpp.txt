@@ -1,0 +1,7 @@
+F:\Programs\UE4\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\Definitions.BuildingEscape.h
+F:\Programs\UE4\BuildingEscape\Source\BuildingEscape\BuildingEscapeGameModeBase.h
+E:\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+E:\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+E:\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+E:\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+F:\Programs\UE4\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Inc\BuildingEscape\BuildingEscapeGameModeBase.generated.h
