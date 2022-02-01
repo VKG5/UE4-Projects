@@ -39,7 +39,7 @@ public: \
 	NO_API UWorldPosition(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UWorldPosition) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UWorldPosition); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UWorldPosition); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UWorldPosition); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UWorldPosition(UWorldPosition&&); \
@@ -54,7 +54,7 @@ private: \
 	NO_API UWorldPosition(const UWorldPosition&); \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UWorldPosition); \
-DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UWorldPosition); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UWorldPosition); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UWorldPosition)
 
 
