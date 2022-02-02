@@ -24,10 +24,47 @@ void Ugrabber::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// ...
-	UE_LOG(LogTemp, Warning, TEXT("HELLO THERE, GRABBER HERE!"));
+	// Debugging
+	//UE_LOG(LogTemp, Warning, TEXT("HELLO THERE, GRABBER HERE!"));
+
+	// Checking for Physics Handle Component
+	physicsHandle = GetOwner()->FindComponentByClass<UPhysicsHandleComponent>();
+	inputComponent = GetOwner()->FindComponentByClass<UInputComponent>();
+
+	// Checking if nullptr or not
+	// If nullptr then throw an error
+	if (!physicsHandle)
+	{
+		UE_LOG(LogTemp, Error, TEXT("Physics Handle Component missing from the actor : %s"), *GetOwner()->GetName());
+	}
+
+	// Checking for input component, otherwise throw error
+	if (inputComponent)
+	{
+		// Checking for Key Press
+		inputComponent->BindAction("Grab", IE_Pressed, this, &Ugrabber::Grab);
+
+		// Checking for Key Release
+		inputComponent->BindAction("Grab", IE_Released, this, &Ugrabber::Release);
+	}
+
+	else
+	{
+		UE_LOG(LogTemp, Error, TEXT("Input Component missing from the actor : %s"), *GetOwner()->GetName());
+	}
 }
 
+void Ugrabber::Grab()
+{
+	// Debugging
+	UE_LOG(LogTemp, Warning, TEXT("Grabber function called!"));
+}
+
+void Ugrabber::Release()
+{
+	// Debugging
+	UE_LOG(LogTemp, Warning, TEXT("Grabber function released!"));
+}
 
 // Called every frame
 void Ugrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
@@ -65,6 +102,24 @@ void Ugrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 		2.5f
 	);
 
+	FHitResult hit;
+	FCollisionQueryParams TraceParams(FName(TEXT("")), false, GetOwner());
+
+	GetWorld()->LineTraceSingleByObjectType(
+		OUT hit,
+		playerViewPointLoc,
+		lineEnd,
+		FCollisionObjectQueryParams(ECollisionChannel::ECC_PhysicsBody),
+		TraceParams
+	);
+
+	AActor* actorHit = hit.GetActor();
+
+	// If the actor has hit something, only then print
 	// Check what it hits
+	if (actorHit)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("The actor that was hit is : %s"), *(actorHit->GetName()));
+	}
 }
 
