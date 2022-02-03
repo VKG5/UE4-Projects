@@ -31,21 +31,6 @@ void Ugrabber::BeginPlay()
 // Custom functions
 void Ugrabber::Grab()
 {
-	// TODO Refactor this section
-	// Get Players Viewpoint and vector
-	FVector playerViewPointLoc;
-	FRotator playerViewPointRot;
-
-	// Uses reference passing
-	GetWorld()->GetFirstPlayerController()->GetPlayerViewPoint(
-		OUT playerViewPointLoc,
-		OUT playerViewPointRot
-	);
-
-	// Ray Cast out to a certain distance (Reach)
-	// Draw a line from player showing reach (A fixed length) - Debug Line
-	FVector lineEnd = playerViewPointLoc + playerViewPointRot.Vector() * reach;
-
 	// Debugging
 	UE_LOG(LogTemp, Warning, TEXT("Grabber function called!"));
 
@@ -61,7 +46,7 @@ void Ugrabber::Grab()
 		physicsHandle->GrabComponentAtLocation(
 			componentToGrab,
 			NAME_None,
-			lineEnd
+			getLineEndPoint()
 		);
 	}
 }
@@ -119,45 +104,27 @@ void Ugrabber::inputComponentCheck()
 void Ugrabber::drawDebugLineStart()
 {
 	debugLineFlag = true;
-	UE_LOG(LogTemp, Warning, TEXT("DrawDebug() Called, flag value : %s"), (debugLineFlag ? TEXT("true") : TEXT("false")));
 }
 
 void Ugrabber::drawDebugLineStop()
 {
 	debugLineFlag = false;
-	UE_LOG(LogTemp, Warning, TEXT("DrawDebug() Released, flag value : %s"), (debugLineFlag ? TEXT("true") : TEXT("false")));
 }
 
-FHitResult Ugrabber::getHitResult() const
+FHitResult Ugrabber::getHitResult()
 {
-	// Get Players Viewpoint and vector
-	FVector playerViewPointLoc;
-	FRotator playerViewPointRot;
-	
-	// Uses reference passing
-	GetWorld()->GetFirstPlayerController()->GetPlayerViewPoint(
-		OUT playerViewPointLoc,
-		OUT playerViewPointRot
-	);
-
-	// Ray Cast out to a certain distance (Reach)
-	// Draw a line from player showing reach (A fixed length) - Debug Line
-	FVector lineEnd = playerViewPointLoc + playerViewPointRot.Vector() * reach;
-
 	if (debugLineFlag)
 	{
 		DrawDebugLine(
 			GetWorld(),
-			playerViewPointLoc,
-			lineEnd,
+			getPlayerPosition(),
+			getLineEndPoint(),
 			FColor(0, 255, 0),
-			false,
+			true,
 			10.f,
 			0,
 			2.5f
 		);
-
-		UE_LOG(LogTemp, Warning, TEXT("Inside Debug Loop"));
 	}
 
 	FHitResult hit;
@@ -165,30 +132,36 @@ FHitResult Ugrabber::getHitResult() const
 
 	GetWorld()->LineTraceSingleByObjectType(
 		OUT hit,
-		playerViewPointLoc,
-		lineEnd,
+		getPlayerPosition(),
+		getLineEndPoint(),
 		FCollisionObjectQueryParams(ECollisionChannel::ECC_PhysicsBody),
 		TraceParams
 	);
 
 	AActor* actorHit = hit.GetActor();
 
-	// If the actor has hit something, only then print
-	// Check what it hits
-	if (actorHit)
-	{
-		UE_LOG(LogTemp, Warning, TEXT("The actor that was hit is : %s"), *(actorHit->GetName()));
-	}
-
 	// Returning
 	return hit;
 }
 
-// Called every frame
-void Ugrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
+FVector Ugrabber::getPlayerPosition()
 {
-	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+	// TODO Refactor this section
+	// Get Players Viewpoint and vector
+	FVector playerViewPointLoc;
+	FRotator playerViewPointRot;
 
+	// Uses reference passing
+	GetWorld()->GetFirstPlayerController()->GetPlayerViewPoint(
+		OUT playerViewPointLoc,
+		OUT playerViewPointRot
+	);
+
+	return playerViewPointLoc;
+}
+
+FVector Ugrabber::getLineEndPoint()
+{
 	// TODO Refactor this section
 	// Get Players Viewpoint and vector
 	FVector playerViewPointLoc;
@@ -202,12 +175,18 @@ void Ugrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 
 	// Ray Cast out to a certain distance (Reach)
 	// Draw a line from player showing reach (A fixed length) - Debug Line
-	FVector lineEnd = playerViewPointLoc + playerViewPointRot.Vector() * reach;
+	return playerViewPointLoc + playerViewPointRot.Vector() * reach;
+}
+
+// Called every frame
+void Ugrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
+{
+	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
 	// If physics handle is attached
 	if (physicsHandle->GrabbedComponent)
 	{
 		// Move object
-		physicsHandle->SetTargetLocation(lineEnd);
+		physicsHandle->SetTargetLocation(getLineEndPoint());
 	}
 }

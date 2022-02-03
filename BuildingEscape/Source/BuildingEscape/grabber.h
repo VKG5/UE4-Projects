@@ -44,5 +44,9 @@ private:
 	void drawDebugLineStop();
 
 	// Getting the object that is hit
-	FHitResult getHitResult() const;
+	FHitResult getHitResult();
+
+	// Getting the Player World Location and Object World Location
+	FVector getPlayerPosition();
+	FVector getLineEndPoint();
 };

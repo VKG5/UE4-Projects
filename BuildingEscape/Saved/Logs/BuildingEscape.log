@@ -1605,3 +1605,686 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2022.02.03-07.03.50:872][376]AssetCheck: New page: Asset Save: multiple assets
 [2022.02.03-07.03.50:872][376]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Levels/Building_Escape_BuiltData.Building_Escape_BuiltData
 [2022.02.03-07.03.50:872][376]LogContentValidation: Display: Validating World /Game/Levels/Building_Escape.Building_Escape
+[2022.02.03-10.33.28:973][607]LogHttp: Warning: 0000018C47E74800: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B5C6213F2-4D3A-D787-565C-83B8B953CFDC%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.27.2-18319896%2B%2B%2BUE4%2BRelease-4.27&UserID=1acde06047a9fd4fa6d9d49907b0de61%7Cd2184972a7b546f285997cdae457d1d2%7C8887cf2b-5ff4-4bc1-84e8-0fa9c2c90e75&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2022.02.03-10.33.28:974][607]LogHttp: Warning: 0000018C47E74800: request failed, libcurl error: 0 (No error)
+[2022.02.03-10.33.28:974][607]LogHttp: Warning: 0000018C47E74800: libcurl info message cache 0 (Found bundle for host datarouter.ol.epicgames.com: 0x18c646f3eb0 [can pipeline])
+[2022.02.03-10.33.28:974][607]LogHttp: Warning: 0000018C47E74800: libcurl info message cache 1 (Re-using existing connection! (#5) with host datarouter.ol.epicgames.com)
+[2022.02.03-10.33.28:974][607]LogHttp: Warning: 0000018C47E74800: libcurl info message cache 2 (Connected to datarouter.ol.epicgames.com (54.144.207.214) port 443 (#5))
+[2022.02.03-10.33.28:974][607]LogHttp: Warning: 0000018C47E74800: libcurl info message cache 3 (We are completely uploaded and fine)
+[2022.02.03-10.33.28:974][607]LogHttp: Warning: 0000018C47E74800: libcurl info message cache 4 (TLSv1.2 (IN), TLS alert, Client hello (1):)
+[2022.02.03-10.33.28:974][607]LogHttp: Warning: 0000018C47E74800: libcurl info message cache 5 (Connection died, retrying a fresh connect)
+[2022.02.03-10.33.28:974][607]LogHttp: Warning: 0000018C47E74800: libcurl info message cache 6 (necessary data rewind wasn't possible)
+[2022.02.03-10.33.28:975][607]LogHttp: Warning: 0000018C47E74800: libcurl info message cache 7 (Closing connection 5)
+[2022.02.03-10.33.28:975][607]LogHttp: Warning: 0000018C47E74800: libcurl info message cache 8 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2022.02.03-10.33.28:994][608]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B5C6213F2-4D3A-D787-565C-83B8B953CFDC%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.27.2-18319896%2B%2B%2BUE4%2BRelease-4.27&UserID=1acde06047a9fd4fa6d9d49907b0de61%7Cd2184972a7b546f285997cdae457d1d2%7C8887cf2b-5ff4-4bc1-84e8-0fa9c2c90e75&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2022.02.03-10.35.41:544][806]LogHttp: Warning: 0000018C47E74800: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B5C6213F2-4D3A-D787-565C-83B8B953CFDC%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.27.2-18319896%2B%2B%2BUE4%2BRelease-4.27&UserID=1acde06047a9fd4fa6d9d49907b0de61%7Cd2184972a7b546f285997cdae457d1d2%7C8887cf2b-5ff4-4bc1-84e8-0fa9c2c90e75&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2022.02.03-10.35.41:544][806]LogHttp: Warning: 0000018C47E74800: request failed, libcurl error: 0 (No error)
+[2022.02.03-10.35.41:544][806]LogHttp: Warning: 0000018C47E74800: libcurl info message cache 0 (Found bundle for host datarouter.ol.epicgames.com: 0x18c646f3250 [can pipeline])
+[2022.02.03-10.35.41:544][806]LogHttp: Warning: 0000018C47E74800: libcurl info message cache 1 (Re-using existing connection! (#6) with host datarouter.ol.epicgames.com)
+[2022.02.03-10.35.41:544][806]LogHttp: Warning: 0000018C47E74800: libcurl info message cache 2 (Connected to datarouter.ol.epicgames.com (107.21.49.76) port 443 (#6))
+[2022.02.03-10.35.41:544][806]LogHttp: Warning: 0000018C47E74800: libcurl info message cache 3 (We are completely uploaded and fine)
+[2022.02.03-10.35.41:544][806]LogHttp: Warning: 0000018C47E74800: libcurl info message cache 4 (TLSv1.2 (IN), TLS alert, Client hello (1):)
+[2022.02.03-10.35.41:544][806]LogHttp: Warning: 0000018C47E74800: libcurl info message cache 5 (Connection died, retrying a fresh connect)
+[2022.02.03-10.35.41:544][806]LogHttp: Warning: 0000018C47E74800: libcurl info message cache 6 (necessary data rewind wasn't possible)
+[2022.02.03-10.35.41:546][806]LogHttp: Warning: 0000018C47E74800: libcurl info message cache 7 (Closing connection 6)
+[2022.02.03-10.35.41:546][806]LogHttp: Warning: 0000018C47E74800: libcurl info message cache 8 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2022.02.03-10.35.41:546][806]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B5C6213F2-4D3A-D787-565C-83B8B953CFDC%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.27.2-18319896%2B%2B%2BUE4%2BRelease-4.27&UserID=1acde06047a9fd4fa6d9d49907b0de61%7Cd2184972a7b546f285997cdae457d1d2%7C8887cf2b-5ff4-4bc1-84e8-0fa9c2c90e75&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2022.02.03-10.39.00:409][615]LogHttp: Warning: 0000018C47E74800: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B5C6213F2-4D3A-D787-565C-83B8B953CFDC%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.27.2-18319896%2B%2B%2BUE4%2BRelease-4.27&UserID=1acde06047a9fd4fa6d9d49907b0de61%7Cd2184972a7b546f285997cdae457d1d2%7C8887cf2b-5ff4-4bc1-84e8-0fa9c2c90e75&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2022.02.03-10.39.00:409][615]LogHttp: Warning: 0000018C47E74800: request failed, libcurl error: 0 (No error)
+[2022.02.03-10.39.00:409][615]LogHttp: Warning: 0000018C47E74800: libcurl info message cache 0 (Found bundle for host datarouter.ol.epicgames.com: 0x18c646f30a0 [can pipeline])
+[2022.02.03-10.39.00:409][615]LogHttp: Warning: 0000018C47E74800: libcurl info message cache 1 (Re-using existing connection! (#8) with host datarouter.ol.epicgames.com)
+[2022.02.03-10.39.00:409][615]LogHttp: Warning: 0000018C47E74800: libcurl info message cache 2 (Connected to datarouter.ol.epicgames.com (52.70.47.0) port 443 (#8))
+[2022.02.03-10.39.00:409][615]LogHttp: Warning: 0000018C47E74800: libcurl info message cache 3 (We are completely uploaded and fine)
+[2022.02.03-10.39.00:409][615]LogHttp: Warning: 0000018C47E74800: libcurl info message cache 4 (TLSv1.2 (IN), TLS alert, Client hello (1):)
+[2022.02.03-10.39.00:409][615]LogHttp: Warning: 0000018C47E74800: libcurl info message cache 5 (Connection died, retrying a fresh connect)
+[2022.02.03-10.39.00:409][615]LogHttp: Warning: 0000018C47E74800: libcurl info message cache 6 (necessary data rewind wasn't possible)
+[2022.02.03-10.39.00:409][615]LogHttp: Warning: 0000018C47E74800: libcurl info message cache 7 (Closing connection 8)
+[2022.02.03-10.39.00:409][615]LogHttp: Warning: 0000018C47E74800: libcurl info message cache 8 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2022.02.03-10.39.00:430][616]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B5C6213F2-4D3A-D787-565C-83B8B953CFDC%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.27.2-18319896%2B%2B%2BUE4%2BRelease-4.27&UserID=1acde06047a9fd4fa6d9d49907b0de61%7Cd2184972a7b546f285997cdae457d1d2%7C8887cf2b-5ff4-4bc1-84e8-0fa9c2c90e75&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2022.02.03-10.41.42:215][406]Candidate modules for hot reload:
+[2022.02.03-10.41.42:215][406]  BuildingEscape
+[2022.02.03-10.41.42:216][406]Launching UnrealBuildTool... [E:/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=BuildingEscape,1378 BuildingEscapeEditor Win64 Development -Project="F:/Programs/UE4/BuildingEscape/BuildingEscape.uproject" "F:/Programs/UE4/BuildingEscape/BuildingEscape.uproject"  -IgnoreJunk]
+[2022.02.03-10.41.42:231][406]Warning: Starting HotReload took  0.1s.
+[2022.02.03-10.44.35:604][792]CompilerResultsLog: New page: Compilation - Feb 3, 2022, 9:44:35 PM
+[2022.02.03-10.44.35:605][792]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (F:\Programs\UE4).
+[2022.02.03-10.44.35:605][792]CompilerResultsLog: Parsing headers for BuildingEscapeEditor
+[2022.02.03-10.44.35:605][792]CompilerResultsLog:   Running UnrealHeaderTool "F:\Programs\UE4\BuildingEscape\BuildingEscape.uproject" "F:\Programs\UE4\BuildingEscape\Intermediate\Build\Win64\BuildingEscapeEditor\Development\BuildingEscapeEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\varun\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2022.02.03-10.44.35:605][792]CompilerResultsLog: LogInit: Display: Loading text-based GConfig....
+[2022.02.03-10.44.35:605][792]CompilerResultsLog: Reflection code generated for BuildingEscapeEditor in 6.8561231 seconds
+[2022.02.03-10.44.35:605][792]CompilerResultsLog: Building BuildingEscapeEditor...
+[2022.02.03-10.44.35:605][792]CompilerResultsLog: Using Visual Studio 2019 14.29.30037 toolchain (V:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.02.03-10.44.35:605][792]CompilerResultsLog: Building 5 actions with 12 processes...
+[2022.02.03-10.44.35:605][792]CompilerResultsLog:   [1/5] grabber.cpp
+[2022.02.03-10.44.35:606][792]CompilerResultsLog:    F:\Programs\UE4\BuildingEscape\Source\BuildingEscape\grabber.cpp(117) : error C2662: 'FVector *Ugrabber::getPlayerPosition(void)': cannot convert 'this' pointer from 'const Ugrabber' to 'Ugrabber &'
+[2022.02.03-10.44.35:606][792]CompilerResultsLog:   F:\Programs\UE4\BuildingEscape\Source\BuildingEscape\grabber.cpp(117): note: Conversion loses qualifiers
+[2022.02.03-10.44.35:606][792]CompilerResultsLog:   F:\Programs\UE4\BuildingEscape\Source\BuildingEscape\grabber.h(50): note: see declaration of 'Ugrabber::getPlayerPosition'
+[2022.02.03-10.44.35:606][792]CompilerResultsLog:   [2/5] grabber.gen.cpp
+[2022.02.03-10.44.35:606][792]LogMainFrame: MainFrame: Module compiling took 173.403 seconds
+[2022.02.03-10.44.35:632][792]Warning: HotReload failed, recompile failed
+[2022.02.03-10.47.00:544][470]Candidate modules for hot reload:
+[2022.02.03-10.47.00:544][470]  BuildingEscape
+[2022.02.03-10.47.00:544][470]Launching UnrealBuildTool... [E:/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=BuildingEscape,1211 BuildingEscapeEditor Win64 Development -Project="F:/Programs/UE4/BuildingEscape/BuildingEscape.uproject" "F:/Programs/UE4/BuildingEscape/BuildingEscape.uproject"  -IgnoreJunk]
+[2022.02.03-10.47.00:554][470]Warning: Starting HotReload took  0.0s.
+[2022.02.03-10.47.02:713][564]CompilerResultsLog: New page: Compilation - Feb 3, 2022, 9:47:02 PM
+[2022.02.03-10.47.02:713][564]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (F:\Programs\UE4).
+[2022.02.03-10.47.02:713][564]CompilerResultsLog: Building BuildingEscapeEditor...
+[2022.02.03-10.47.02:713][564]CompilerResultsLog: Using Visual Studio 2019 14.29.30037 toolchain (V:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.02.03-10.47.02:713][564]CompilerResultsLog: Building 4 actions with 12 processes...
+[2022.02.03-10.47.02:713][564]CompilerResultsLog:   [1/4] grabber.cpp
+[2022.02.03-10.47.02:713][564]CompilerResultsLog:    F:\Programs\UE4\BuildingEscape\Source\BuildingEscape\grabber.cpp(123) : error C2662: 'FVector *Ugrabber::getPlayerPosition(void)': cannot convert 'this' pointer from 'const Ugrabber' to 'Ugrabber &'
+[2022.02.03-10.47.02:713][564]CompilerResultsLog:   F:\Programs\UE4\BuildingEscape\Source\BuildingEscape\grabber.cpp(123): note: Conversion loses qualifiers
+[2022.02.03-10.47.02:713][564]CompilerResultsLog:   F:\Programs\UE4\BuildingEscape\Source\BuildingEscape\grabber.h(50): note: see declaration of 'Ugrabber::getPlayerPosition'
+[2022.02.03-10.47.02:713][564]CompilerResultsLog:    F:\Programs\UE4\BuildingEscape\Source\BuildingEscape\grabber.cpp(124) : error C2662: 'FVector *Ugrabber::getPlayerPosition(void)': cannot convert 'this' pointer from 'const Ugrabber' to 'Ugrabber &'
+[2022.02.03-10.47.02:713][564]CompilerResultsLog:   F:\Programs\UE4\BuildingEscape\Source\BuildingEscape\grabber.cpp(124): note: Conversion loses qualifiers
+[2022.02.03-10.47.02:713][564]CompilerResultsLog:   F:\Programs\UE4\BuildingEscape\Source\BuildingEscape\grabber.h(50): note: see declaration of 'Ugrabber::getPlayerPosition'
+[2022.02.03-10.47.02:713][564]CompilerResultsLog:    F:\Programs\UE4\BuildingEscape\Source\BuildingEscape\grabber.cpp(121) : error C2664: 'void DrawDebugLine(const UWorld *,const FVector &,const FVector &,const FColor &,bool,float,uint8,float)': cannot convert argument 2 from 'FColor' to 'const FVector &'
+[2022.02.03-10.47.02:713][564]CompilerResultsLog:   F:\Programs\UE4\BuildingEscape\Source\BuildingEscape\grabber.cpp(130): note: Reason: cannot convert from 'FColor' to 'const FVector'
+[2022.02.03-10.47.02:713][564]CompilerResultsLog:   F:\Programs\UE4\BuildingEscape\Source\BuildingEscape\grabber.cpp(125): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+[2022.02.03-10.47.02:713][564]CompilerResultsLog:   E:\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Public\DrawDebugHelpers.h(20): note: see declaration of 'DrawDebugLine'
+[2022.02.03-10.47.02:713][564]CompilerResultsLog:    F:\Programs\UE4\BuildingEscape\Source\BuildingEscape\grabber.cpp(140) : error C2662: 'FVector *Ugrabber::getPlayerPosition(void)': cannot convert 'this' pointer from 'const Ugrabber' to 'Ugrabber &'
+[2022.02.03-10.47.02:713][564]CompilerResultsLog:   F:\Programs\UE4\BuildingEscape\Source\BuildingEscape\grabber.cpp(140): note: Conversion loses qualifiers
+[2022.02.03-10.47.02:713][564]CompilerResultsLog:   F:\Programs\UE4\BuildingEscape\Source\BuildingEscape\grabber.h(50): note: see declaration of 'Ugrabber::getPlayerPosition'
+[2022.02.03-10.47.02:714][564]CompilerResultsLog:    F:\Programs\UE4\BuildingEscape\Source\BuildingEscape\grabber.cpp(141) : error C2662: 'FVector *Ugrabber::getPlayerPosition(void)': cannot convert 'this' pointer from 'const Ugrabber' to 'Ugrabber &'
+[2022.02.03-10.47.02:714][564]CompilerResultsLog:   F:\Programs\UE4\BuildingEscape\Source\BuildingEscape\grabber.cpp(141): note: Conversion loses qualifiers
+[2022.02.03-10.47.02:714][564]CompilerResultsLog:   F:\Programs\UE4\BuildingEscape\Source\BuildingEscape\grabber.h(50): note: see declaration of 'Ugrabber::getPlayerPosition'
+[2022.02.03-10.47.02:714][564]CompilerResultsLog:    F:\Programs\UE4\BuildingEscape\Source\BuildingEscape\grabber.cpp(138) : error C2660: 'UWorld::LineTraceSingleByObjectType': function does not take 3 arguments
+[2022.02.03-10.47.02:714][564]CompilerResultsLog:   E:\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/World.h(1719): note: see declaration of 'UWorld::LineTraceSingleByObjectType'
+[2022.02.03-10.47.02:714][564]LogMainFrame: MainFrame: Module compiling took 2.178 seconds
+[2022.02.03-10.47.02:714][564]Warning: HotReload failed, recompile failed
+[2022.02.03-11.05.09:388][548]Candidate modules for hot reload:
+[2022.02.03-11.05.09:388][548]  BuildingEscape
+[2022.02.03-11.05.09:388][548]Launching UnrealBuildTool... [E:/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=BuildingEscape,1912 BuildingEscapeEditor Win64 Development -Project="F:/Programs/UE4/BuildingEscape/BuildingEscape.uproject" "F:/Programs/UE4/BuildingEscape/BuildingEscape.uproject"  -IgnoreJunk]
+[2022.02.03-11.05.09:580][548]Warning: Starting HotReload took  0.2s.
+[2022.02.03-11.06.12:354][250]CompilerResultsLog: New page: Compilation - Feb 3, 2022, 10:06:12 PM
+[2022.02.03-11.06.12:354][250]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (F:\Programs\UE4).
+[2022.02.03-11.06.12:354][250]CompilerResultsLog: Parsing headers for BuildingEscapeEditor
+[2022.02.03-11.06.12:355][250]CompilerResultsLog:   Running UnrealHeaderTool "F:\Programs\UE4\BuildingEscape\BuildingEscape.uproject" "F:\Programs\UE4\BuildingEscape\Intermediate\Build\Win64\BuildingEscapeEditor\Development\BuildingEscapeEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\varun\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2022.02.03-11.06.12:355][250]CompilerResultsLog: LogInit: Display: Loading text-based GConfig....
+[2022.02.03-11.06.12:355][250]CompilerResultsLog: Reflection code generated for BuildingEscapeEditor in 7.2184567 seconds
+[2022.02.03-11.06.12:355][250]CompilerResultsLog: Building BuildingEscapeEditor...
+[2022.02.03-11.06.12:355][250]CompilerResultsLog: Using Visual Studio 2019 14.29.30037 toolchain (V:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.02.03-11.06.12:355][250]CompilerResultsLog: Building 5 actions with 12 processes...
+[2022.02.03-11.06.12:355][250]CompilerResultsLog:   [1/5] grabber.gen.cpp
+[2022.02.03-11.06.12:355][250]CompilerResultsLog:   [2/5] grabber.cpp
+[2022.02.03-11.06.12:355][250]CompilerResultsLog:   [3/5] UE4Editor-BuildingEscape-1912.lib
+[2022.02.03-11.06.12:355][250]CompilerResultsLog:      Creating library F:\Programs\UE4\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\UE4Editor-BuildingEscape-1912.lib and object F:\Programs\UE4\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\UE4Editor-BuildingEscape-1912.exp
+[2022.02.03-11.06.12:355][250]CompilerResultsLog:   [4/5] UE4Editor-BuildingEscape-1912.dll
+[2022.02.03-11.06.12:355][250]CompilerResultsLog:      Creating library F:\Programs\UE4\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\UE4Editor-BuildingEscape-1912.suppressed.lib and object F:\Programs\UE4\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\UE4Editor-BuildingEscape-1912.suppressed.exp
+[2022.02.03-11.06.12:355][250]CompilerResultsLog:   [5/5] BuildingEscapeEditor.target
+[2022.02.03-11.06.12:355][250]CompilerResultsLog: Total time in Parallel executor: 53.46 seconds
+[2022.02.03-11.06.12:355][250]CompilerResultsLog: Total execution time: 62.53 seconds
+[2022.02.03-11.06.12:355][250]LogMainFrame: MainFrame: Module compiling took 62.976 seconds
+[2022.02.03-11.06.13:696][250]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'BuildingEscape' in 0.0016 seconds. Added 4 classes and 2 folders.
+[2022.02.03-11.06.13:702][250]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2022.02.03-11.06.13:786][250]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0155 seconds. Added 3826 classes and 930 folders.
+[2022.02.03-11.06.13:795][250]Display: HotReload took 64.4s.
+[2022.02.03-11.06.19:061][564]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Floor)
+[2022.02.03-11.06.20:044][609]LogTemp: Repeating last play command: Selected Viewport
+[2022.02.03-11.06.20:057][609]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.02.03-11.06.20:058][609]PIE: New page: PIE session: Building_Escape (Feb 3, 2022, 10:06:20 PM)
+[2022.02.03-11.06.20:058][609]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Building_Escape
+[2022.02.03-11.06.20:078][609]LogPlayLevel: PIE: StaticDuplicateObject took: (0.019876s)
+[2022.02.03-11.06.20:080][609]LogAIModule: Creating AISystem for world Building_Escape
+[2022.02.03-11.06.20:080][609]LogPlayLevel: PIE: World Init took: (0.002064s)
+[2022.02.03-11.06.20:080][609]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Building_Escape.Building_Escape to /Game/Levels/UEDPIE_0_Building_Escape.Building_Escape (0.022154s)
+[2022.02.03-11.06.20:091][609]LogUObjectHash: Compacting FUObjectHashTables data took   1.37ms
+[2022.02.03-11.06.20:100][609]LogAudio: Display: Creating Audio Device:                 Id: 7, Scope: Unique, Realtime: True
+[2022.02.03-11.06.20:100][609]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.02.03-11.06.20:100][609]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.02.03-11.06.20:100][609]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.02.03-11.06.20:100][609]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.02.03-11.06.20:100][609]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.02.03-11.06.20:100][609]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.02.03-11.06.20:100][609]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.02.03-11.06.20:100][609]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.02.03-11.06.20:101][609]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.02.03-11.06.20:101][609]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.02.03-11.06.20:101][609]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.02.03-11.06.20:101][609]LogAudioMixer: Display: Initializing audio mixer.
+[2022.02.03-11.06.20:108][609]LogAudioMixer: Display: 0: FrontLeft
+[2022.02.03-11.06.20:108][609]LogAudioMixer: Display: 1: FrontRight
+[2022.02.03-11.06.20:108][609]LogAudioMixer: Display: 2: FrontCenter
+[2022.02.03-11.06.20:108][609]LogAudioMixer: Display: 3: LowFrequency
+[2022.02.03-11.06.20:108][609]LogAudioMixer: Display: 4: BackLeft
+[2022.02.03-11.06.20:108][609]LogAudioMixer: Display: 5: BackRight
+[2022.02.03-11.06.20:108][609]LogAudioMixer: Display: 6: SideLeft
+[2022.02.03-11.06.20:108][609]LogAudioMixer: Display: 7: SideRight
+[2022.02.03-11.06.20:157][609]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.02.03-11.06.20:159][609]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.02.03-11.06.20:159][609]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.02.03-11.06.20:159][609]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.02.03-11.06.20:161][609]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.02.03-11.06.20:161][609]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.02.03-11.06.20:161][609]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2022.02.03-11.06.20:162][609]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.02.03-11.06.20:162][609]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.02.03-11.06.20:162][609]LogInit: FAudioDevice initialized.
+[2022.02.03-11.06.20:162][609]LogAudio: Display: Audio Device (ID: 7) registered with world 'Building_Escape'.
+[2022.02.03-11.06.20:179][609]LogLoad: Game class is 'BP_MyBuildingEscapeGameModeBase_C'
+[2022.02.03-11.06.20:181][609]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Building_Escape.Building_Escape up for play (max tick rate 0) at 2022.02.03-16.36.20
+[2022.02.03-11.06.20:181][609]LogWorld: Bringing up level for play took: 0.001335
+[2022.02.03-11.06.20:181][609]LogOnline: OSS: Creating online subsystem instance for: :Context_8
+[2022.02.03-11.06.20:186][609]PIE: Server logged in
+[2022.02.03-11.06.20:186][609]PIE: Play in editor total start time 0.132 seconds.
+[2022.02.03-11.06.21:710][700]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.06.21:842][708]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.06.22:377][740]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.06.23:276][794]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.06.23:843][828]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.06.24:698][879]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.06.25:176][908]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.06.25:393][921]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.06.27:701][ 59]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cone)
+[2022.02.03-11.06.30:262][210]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.06.31:611][291]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.06.33:379][397]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.06.33:899][428]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.06.34:662][474]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.06.36:230][568]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.06.36:562][588]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.06.37:795][662]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.06.38:379][697]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.06.39:181][745]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.06.39:863][786]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.06.39:999][794]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.06.43:281][991]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.06.43:412][999]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.06.44:463][ 62]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.06.44:646][ 73]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.06.44:863][ 86]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.06.44:962][ 92]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.06.45:079][ 99]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.06.45:144][103]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.06.45:246][109]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.06.45:311][113]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.06.45:395][118]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.06.45:478][123]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.06.45:823][142]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.03-11.06.45:823][142]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_Building_Escape
+[2022.02.03-11.06.45:823][142]LogWorld: UWorld::CleanupWorld for Building_Escape, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-11.06.45:823][142]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-11.06.45:837][142]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.02.03-11.06.45:838][142]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-11.06.45:844][142]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.02.03-11.06.45:844][142]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-11.06.45:845][142]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-11.06.45:858][142]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.03-11.06.45:860][142]LogUObjectHash: Compacting FUObjectHashTables data took   0.75ms
+[2022.02.03-11.06.45:978][149]LogPlayLevel: Display: Destroying online subsystem :Context_8
+[2022.02.03-11.28.46:393][285]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cone2)
+[2022.02.03-11.28.47:395][343]LogTemp: Repeating last play command: Selected Viewport
+[2022.02.03-11.28.47:406][343]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.02.03-11.28.47:406][343]PIE: New page: PIE session: Building_Escape (Feb 3, 2022, 10:28:47 PM)
+[2022.02.03-11.28.47:406][343]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Building_Escape
+[2022.02.03-11.28.47:417][343]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010519s)
+[2022.02.03-11.28.47:419][343]LogAIModule: Creating AISystem for world Building_Escape
+[2022.02.03-11.28.47:419][343]LogPlayLevel: PIE: World Init took: (0.001610s)
+[2022.02.03-11.28.47:419][343]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Building_Escape.Building_Escape to /Game/Levels/UEDPIE_0_Building_Escape.Building_Escape (0.012611s)
+[2022.02.03-11.28.47:426][343]LogUObjectHash: Compacting FUObjectHashTables data took   0.83ms
+[2022.02.03-11.28.47:427][343]LogAudio: Display: Creating Audio Device:                 Id: 8, Scope: Unique, Realtime: True
+[2022.02.03-11.28.47:427][343]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.02.03-11.28.47:427][343]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.02.03-11.28.47:427][343]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.02.03-11.28.47:427][343]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.02.03-11.28.47:427][343]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.02.03-11.28.47:427][343]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.02.03-11.28.47:427][343]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.02.03-11.28.47:427][343]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.02.03-11.28.47:428][343]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.02.03-11.28.47:428][343]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.02.03-11.28.47:428][343]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.02.03-11.28.47:428][343]LogAudioMixer: Display: Initializing audio mixer.
+[2022.02.03-11.28.47:433][343]LogAudioMixer: Display: 0: FrontLeft
+[2022.02.03-11.28.47:433][343]LogAudioMixer: Display: 1: FrontRight
+[2022.02.03-11.28.47:433][343]LogAudioMixer: Display: 2: FrontCenter
+[2022.02.03-11.28.47:433][343]LogAudioMixer: Display: 3: LowFrequency
+[2022.02.03-11.28.47:433][343]LogAudioMixer: Display: 4: BackLeft
+[2022.02.03-11.28.47:433][343]LogAudioMixer: Display: 5: BackRight
+[2022.02.03-11.28.47:433][343]LogAudioMixer: Display: 6: SideLeft
+[2022.02.03-11.28.47:433][343]LogAudioMixer: Display: 7: SideRight
+[2022.02.03-11.28.47:480][343]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.02.03-11.28.47:481][343]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.02.03-11.28.47:482][343]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.02.03-11.28.47:482][343]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.02.03-11.28.47:484][343]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.02.03-11.28.47:484][343]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.02.03-11.28.47:484][343]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2022.02.03-11.28.47:486][343]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.02.03-11.28.47:486][343]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.02.03-11.28.47:486][343]LogInit: FAudioDevice initialized.
+[2022.02.03-11.28.47:486][343]LogAudio: Display: Audio Device (ID: 8) registered with world 'Building_Escape'.
+[2022.02.03-11.28.47:501][343]LogLoad: Game class is 'BP_MyBuildingEscapeGameModeBase_C'
+[2022.02.03-11.28.47:503][343]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Building_Escape.Building_Escape up for play (max tick rate 0) at 2022.02.03-16.58.47
+[2022.02.03-11.28.47:503][343]LogWorld: Bringing up level for play took: 0.001344
+[2022.02.03-11.28.47:504][343]LogOnline: OSS: Creating online subsystem instance for: :Context_9
+[2022.02.03-11.28.47:508][343]PIE: Server logged in
+[2022.02.03-11.28.47:509][343]PIE: Play in editor total start time 0.107 seconds.
+[2022.02.03-11.28.48:557][405]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.28.48:671][412]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.28.48:971][430]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.28.49:121][439]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.28.51:554][585]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.28.51:942][608]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.28.52:205][624]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.28.52:339][632]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.28.52:439][638]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.28.52:504][642]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.28.53:322][691]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.28.53:438][698]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.28.54:655][771]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.28.54:738][776]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.28.56:640][890]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.28.56:740][896]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.28.58:022][973]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.28.58:139][980]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.28.59:656][ 71]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.28.59:755][ 77]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.29.01:388][175]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.29.01:506][182]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.29.03:188][283]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.29.03:288][289]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.29.03:905][326]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.29.04:005][332]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.29.04:822][381]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.29.04:922][387]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.29.05:722][435]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.29.05:822][441]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.29.06:140][460]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.29.06:220][465]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.29.06:356][473]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.29.06:404][476]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.29.06:739][496]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.29.06:823][501]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.29.07:672][552]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.29.07:806][560]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.29.08:649][609]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.03-11.29.08:650][609]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_Building_Escape
+[2022.02.03-11.29.08:650][609]LogWorld: UWorld::CleanupWorld for Building_Escape, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-11.29.08:650][609]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-11.29.08:662][609]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.02.03-11.29.08:678][609]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-11.29.08:684][609]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.03-11.29.08:684][609]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-11.29.08:686][609]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-11.29.08:703][609]LogUObjectHash: Compacting FUObjectHashTables data took   0.65ms
+[2022.02.03-11.29.08:840][616]LogPlayLevel: Display: Destroying online subsystem :Context_9
+[2022.02.03-11.29.09:557][659]LogTemp: Repeating last play command: Selected Viewport
+[2022.02.03-11.29.09:567][659]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.02.03-11.29.09:567][659]PIE: New page: PIE session: Building_Escape (Feb 3, 2022, 10:29:09 PM)
+[2022.02.03-11.29.09:567][659]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Building_Escape
+[2022.02.03-11.29.09:573][659]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005544s)
+[2022.02.03-11.29.09:574][659]LogAIModule: Creating AISystem for world Building_Escape
+[2022.02.03-11.29.09:574][659]LogPlayLevel: PIE: World Init took: (0.001088s)
+[2022.02.03-11.29.09:574][659]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Building_Escape.Building_Escape to /Game/Levels/UEDPIE_0_Building_Escape.Building_Escape (0.006802s)
+[2022.02.03-11.29.09:580][659]LogUObjectHash: Compacting FUObjectHashTables data took   0.63ms
+[2022.02.03-11.29.09:581][659]LogAudio: Display: Creating Audio Device:                 Id: 9, Scope: Unique, Realtime: True
+[2022.02.03-11.29.09:581][659]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.02.03-11.29.09:581][659]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.02.03-11.29.09:581][659]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.02.03-11.29.09:581][659]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.02.03-11.29.09:581][659]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.02.03-11.29.09:581][659]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.02.03-11.29.09:581][659]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.02.03-11.29.09:581][659]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.02.03-11.29.09:581][659]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.02.03-11.29.09:581][659]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.02.03-11.29.09:581][659]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.02.03-11.29.09:581][659]LogAudioMixer: Display: Initializing audio mixer.
+[2022.02.03-11.29.09:586][659]LogAudioMixer: Display: 0: FrontLeft
+[2022.02.03-11.29.09:586][659]LogAudioMixer: Display: 1: FrontRight
+[2022.02.03-11.29.09:586][659]LogAudioMixer: Display: 2: FrontCenter
+[2022.02.03-11.29.09:586][659]LogAudioMixer: Display: 3: LowFrequency
+[2022.02.03-11.29.09:586][659]LogAudioMixer: Display: 4: BackLeft
+[2022.02.03-11.29.09:586][659]LogAudioMixer: Display: 5: BackRight
+[2022.02.03-11.29.09:586][659]LogAudioMixer: Display: 6: SideLeft
+[2022.02.03-11.29.09:586][659]LogAudioMixer: Display: 7: SideRight
+[2022.02.03-11.29.09:634][659]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.02.03-11.29.09:635][659]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.02.03-11.29.09:635][659]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.02.03-11.29.09:635][659]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.02.03-11.29.09:636][659]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.02.03-11.29.09:636][659]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.02.03-11.29.09:636][659]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2022.02.03-11.29.09:638][659]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.02.03-11.29.09:638][659]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.02.03-11.29.09:638][659]LogInit: FAudioDevice initialized.
+[2022.02.03-11.29.09:638][659]LogAudio: Display: Audio Device (ID: 9) registered with world 'Building_Escape'.
+[2022.02.03-11.29.09:647][659]LogLoad: Game class is 'BP_MyBuildingEscapeGameModeBase_C'
+[2022.02.03-11.29.09:649][659]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Building_Escape.Building_Escape up for play (max tick rate 0) at 2022.02.03-16.59.09
+[2022.02.03-11.29.09:649][659]LogWorld: Bringing up level for play took: 0.000941
+[2022.02.03-11.29.09:649][659]LogOnline: OSS: Creating online subsystem instance for: :Context_10
+[2022.02.03-11.29.09:652][659]PIE: Server logged in
+[2022.02.03-11.29.09:652][659]PIE: Play in editor total start time 0.09 seconds.
+[2022.02.03-11.29.11:171][750]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.29.11:253][755]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.29.11:820][789]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.29.11:920][795]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.29.12:988][859]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.29.13:071][864]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.29.13:505][890]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.29.13:605][896]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.29.14:271][936]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.29.14:404][944]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.29.14:988][979]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.29.15:120][987]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.29.15:254][995]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.29.15:320][999]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.29.15:755][ 25]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.29.15:836][ 30]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.29.16:388][ 63]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.29.16:521][ 71]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.29.18:239][174]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.29.19:823][269]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.29.20:106][286]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.29.21:021][341]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.29.22:655][439]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.29.24:322][539]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.29.30:935][935]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cone)
+[2022.02.03-11.29.31:453][964]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Cone)
+[2022.02.03-11.29.33:120][ 49]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.03-11.29.33:120][ 49]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_Building_Escape
+[2022.02.03-11.29.33:120][ 49]LogWorld: UWorld::CleanupWorld for Building_Escape, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-11.29.33:120][ 49]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-11.29.33:133][ 49]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.02.03-11.29.33:148][ 49]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-11.29.33:154][ 49]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.03-11.29.33:154][ 49]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-11.29.33:155][ 49]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-11.29.33:179][ 49]LogUObjectHash: Compacting FUObjectHashTables data took   0.67ms
+[2022.02.03-11.29.33:303][ 56]LogPlayLevel: Display: Destroying online subsystem :Context_10
+[2022.02.03-11.29.33:588][ 73]LogTemp: Repeating last play command: Selected Viewport
+[2022.02.03-11.29.33:597][ 73]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.02.03-11.29.33:597][ 73]PIE: New page: PIE session: Building_Escape (Feb 3, 2022, 10:29:33 PM)
+[2022.02.03-11.29.33:597][ 73]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Building_Escape
+[2022.02.03-11.29.33:603][ 73]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006396s)
+[2022.02.03-11.29.33:604][ 73]LogAIModule: Creating AISystem for world Building_Escape
+[2022.02.03-11.29.33:605][ 73]LogPlayLevel: PIE: World Init took: (0.001207s)
+[2022.02.03-11.29.33:605][ 73]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Building_Escape.Building_Escape to /Game/Levels/UEDPIE_0_Building_Escape.Building_Escape (0.007719s)
+[2022.02.03-11.29.33:612][ 73]LogUObjectHash: Compacting FUObjectHashTables data took   0.65ms
+[2022.02.03-11.29.33:614][ 73]LogAudio: Display: Creating Audio Device:                 Id: 10, Scope: Unique, Realtime: True
+[2022.02.03-11.29.33:614][ 73]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.02.03-11.29.33:614][ 73]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.02.03-11.29.33:614][ 73]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.02.03-11.29.33:614][ 73]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.02.03-11.29.33:614][ 73]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.02.03-11.29.33:614][ 73]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.02.03-11.29.33:614][ 73]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.02.03-11.29.33:614][ 73]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.02.03-11.29.33:614][ 73]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.02.03-11.29.33:614][ 73]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.02.03-11.29.33:614][ 73]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.02.03-11.29.33:614][ 73]LogAudioMixer: Display: Initializing audio mixer.
+[2022.02.03-11.29.33:619][ 73]LogAudioMixer: Display: 0: FrontLeft
+[2022.02.03-11.29.33:619][ 73]LogAudioMixer: Display: 1: FrontRight
+[2022.02.03-11.29.33:619][ 73]LogAudioMixer: Display: 2: FrontCenter
+[2022.02.03-11.29.33:619][ 73]LogAudioMixer: Display: 3: LowFrequency
+[2022.02.03-11.29.33:619][ 73]LogAudioMixer: Display: 4: BackLeft
+[2022.02.03-11.29.33:619][ 73]LogAudioMixer: Display: 5: BackRight
+[2022.02.03-11.29.33:619][ 73]LogAudioMixer: Display: 6: SideLeft
+[2022.02.03-11.29.33:619][ 73]LogAudioMixer: Display: 7: SideRight
+[2022.02.03-11.29.33:666][ 73]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.02.03-11.29.33:666][ 73]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.02.03-11.29.33:666][ 73]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.02.03-11.29.33:666][ 73]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.02.03-11.29.33:667][ 73]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.02.03-11.29.33:667][ 73]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.02.03-11.29.33:667][ 73]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2022.02.03-11.29.33:668][ 73]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.02.03-11.29.33:668][ 73]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.02.03-11.29.33:668][ 73]LogInit: FAudioDevice initialized.
+[2022.02.03-11.29.33:668][ 73]LogAudio: Display: Audio Device (ID: 10) registered with world 'Building_Escape'.
+[2022.02.03-11.29.33:681][ 73]LogLoad: Game class is 'BP_MyBuildingEscapeGameModeBase_C'
+[2022.02.03-11.29.33:683][ 73]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Building_Escape.Building_Escape up for play (max tick rate 0) at 2022.02.03-16.59.33
+[2022.02.03-11.29.33:683][ 73]LogWorld: Bringing up level for play took: 0.000951
+[2022.02.03-11.29.33:683][ 73]LogOnline: OSS: Creating online subsystem instance for: :Context_11
+[2022.02.03-11.29.33:685][ 73]PIE: Server logged in
+[2022.02.03-11.29.33:686][ 73]PIE: Play in editor total start time 0.093 seconds.
+[2022.02.03-11.29.36:207][224]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.29.36:540][244]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.29.39:174][402]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.29.39:456][419]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.29.41:524][543]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.29.41:657][551]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.29.42:022][573]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.29.42:155][581]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.29.42:710][612]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.03-11.29.42:710][612]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_Building_Escape
+[2022.02.03-11.29.42:710][612]LogWorld: UWorld::CleanupWorld for Building_Escape, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-11.29.42:710][612]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-11.29.42:719][612]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.02.03-11.29.42:736][612]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-11.29.42:741][612]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.03-11.29.42:741][612]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-11.29.42:742][612]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-11.29.42:765][612]LogUObjectHash: Compacting FUObjectHashTables data took   0.68ms
+[2022.02.03-11.29.42:890][619]LogPlayLevel: Display: Destroying online subsystem :Context_11
+[2022.02.03-11.38.27:827][ 57]Candidate modules for hot reload:
+[2022.02.03-11.38.27:827][ 57]  BuildingEscape
+[2022.02.03-11.38.27:827][ 57]Launching UnrealBuildTool... [E:/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=BuildingEscape,2736 BuildingEscapeEditor Win64 Development -Project="F:/Programs/UE4/BuildingEscape/BuildingEscape.uproject" "F:/Programs/UE4/BuildingEscape/BuildingEscape.uproject"  -IgnoreJunk]
+[2022.02.03-11.38.27:838][ 57]Warning: Starting HotReload took  0.0s.
+[2022.02.03-11.42.17:073][768]CompilerResultsLog: New page: Compilation - Feb 3, 2022, 10:42:17 PM
+[2022.02.03-11.42.17:073][768]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (F:\Programs\UE4).
+[2022.02.03-11.42.17:073][768]CompilerResultsLog: Building BuildingEscapeEditor...
+[2022.02.03-11.42.17:073][768]CompilerResultsLog: Using Visual Studio 2019 14.29.30037 toolchain (V:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.02.03-11.42.17:073][768]CompilerResultsLog: Building 4 actions with 12 processes...
+[2022.02.03-11.42.17:073][768]CompilerResultsLog:   [1/4] grabber.cpp
+[2022.02.03-11.42.17:073][768]CompilerResultsLog:   [2/4] UE4Editor-BuildingEscape-2736.lib
+[2022.02.03-11.42.17:074][768]CompilerResultsLog:      Creating library F:\Programs\UE4\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\UE4Editor-BuildingEscape-2736.lib and object F:\Programs\UE4\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\UE4Editor-BuildingEscape-2736.exp
+[2022.02.03-11.42.17:074][768]CompilerResultsLog:   [3/4] UE4Editor-BuildingEscape-2736.dll
+[2022.02.03-11.42.17:074][768]CompilerResultsLog:      Creating library F:\Programs\UE4\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\UE4Editor-BuildingEscape-2736.suppressed.lib and object F:\Programs\UE4\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\UE4Editor-BuildingEscape-2736.suppressed.exp
+[2022.02.03-11.42.17:074][768]CompilerResultsLog:   [4/4] BuildingEscapeEditor.target
+[2022.02.03-11.42.17:074][768]CompilerResultsLog: Total time in Parallel executor: 227.39 seconds
+[2022.02.03-11.42.17:074][768]CompilerResultsLog: Total execution time: 229.08 seconds
+[2022.02.03-11.42.17:074][768]LogMainFrame: MainFrame: Module compiling took 229.256 seconds
+[2022.02.03-11.42.18:344][768]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'BuildingEscape' in 0.0003 seconds. Added 4 classes and 2 folders.
+[2022.02.03-11.42.18:347][768]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2022.02.03-11.42.18:387][768]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0101 seconds. Added 3826 classes and 930 folders.
+[2022.02.03-11.42.18:390][768]Display: HotReload took 230.6s.
+[2022.02.03-11.42.22:786][ 26]LogTemp: Repeating last play command: Selected Viewport
+[2022.02.03-11.42.22:797][ 26]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.02.03-11.42.22:797][ 26]PIE: New page: PIE session: Building_Escape (Feb 3, 2022, 10:42:22 PM)
+[2022.02.03-11.42.22:797][ 26]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Building_Escape
+[2022.02.03-11.42.22:803][ 26]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006010s)
+[2022.02.03-11.42.22:804][ 26]LogAIModule: Creating AISystem for world Building_Escape
+[2022.02.03-11.42.22:804][ 26]LogPlayLevel: PIE: World Init took: (0.001394s)
+[2022.02.03-11.42.22:804][ 26]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Building_Escape.Building_Escape to /Game/Levels/UEDPIE_0_Building_Escape.Building_Escape (0.007586s)
+[2022.02.03-11.42.22:810][ 26]LogUObjectHash: Compacting FUObjectHashTables data took   0.67ms
+[2022.02.03-11.42.22:812][ 26]LogAudio: Display: Creating Audio Device:                 Id: 11, Scope: Unique, Realtime: True
+[2022.02.03-11.42.22:812][ 26]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.02.03-11.42.22:812][ 26]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.02.03-11.42.22:812][ 26]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.02.03-11.42.22:812][ 26]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.02.03-11.42.22:812][ 26]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.02.03-11.42.22:812][ 26]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.02.03-11.42.22:812][ 26]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.02.03-11.42.22:812][ 26]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.02.03-11.42.22:813][ 26]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.02.03-11.42.22:813][ 26]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.02.03-11.42.22:813][ 26]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.02.03-11.42.22:813][ 26]LogAudioMixer: Display: Initializing audio mixer.
+[2022.02.03-11.42.22:818][ 26]LogAudioMixer: Display: 0: FrontLeft
+[2022.02.03-11.42.22:818][ 26]LogAudioMixer: Display: 1: FrontRight
+[2022.02.03-11.42.22:818][ 26]LogAudioMixer: Display: 2: FrontCenter
+[2022.02.03-11.42.22:818][ 26]LogAudioMixer: Display: 3: LowFrequency
+[2022.02.03-11.42.22:818][ 26]LogAudioMixer: Display: 4: BackLeft
+[2022.02.03-11.42.22:818][ 26]LogAudioMixer: Display: 5: BackRight
+[2022.02.03-11.42.22:818][ 26]LogAudioMixer: Display: 6: SideLeft
+[2022.02.03-11.42.22:818][ 26]LogAudioMixer: Display: 7: SideRight
+[2022.02.03-11.42.22:865][ 26]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.02.03-11.42.22:865][ 26]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.02.03-11.42.22:865][ 26]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.02.03-11.42.22:866][ 26]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.02.03-11.42.22:866][ 26]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.02.03-11.42.22:866][ 26]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.02.03-11.42.22:866][ 26]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2022.02.03-11.42.22:868][ 26]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.02.03-11.42.22:868][ 26]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.02.03-11.42.22:868][ 26]LogInit: FAudioDevice initialized.
+[2022.02.03-11.42.22:868][ 26]LogAudio: Display: Audio Device (ID: 11) registered with world 'Building_Escape'.
+[2022.02.03-11.42.22:874][ 26]LogLoad: Game class is 'BP_MyBuildingEscapeGameModeBase_C'
+[2022.02.03-11.42.22:875][ 26]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Building_Escape.Building_Escape up for play (max tick rate 0) at 2022.02.03-17.12.22
+[2022.02.03-11.42.22:875][ 26]LogWorld: Bringing up level for play took: 0.000877
+[2022.02.03-11.42.22:876][ 26]LogOnline: OSS: Creating online subsystem instance for: :Context_12
+[2022.02.03-11.42.22:878][ 26]PIE: Server logged in
+[2022.02.03-11.42.22:879][ 26]PIE: Play in editor total start time 0.086 seconds.
+[2022.02.03-11.42.25:049][156]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.42.25:163][163]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.42.25:715][196]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.42.25:797][201]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.42.27:214][286]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.42.27:214][286]LogTemp: Warning: Inside DrawDebug()
+[2022.02.03-11.42.28:386][356]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.42.29:598][429]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.42.29:598][429]LogTemp: Warning: Inside DrawDebug()
+[2022.02.03-11.42.31:098][519]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.42.31:898][567]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.42.31:898][567]LogTemp: Warning: Inside DrawDebug()
+[2022.02.03-11.42.32:101][579]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.42.32:866][625]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.42.32:866][625]LogTemp: Warning: Inside DrawDebug()
+[2022.02.03-11.42.33:034][635]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.42.33:385][656]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.42.33:385][656]LogTemp: Warning: Inside DrawDebug()
+[2022.02.03-11.42.33:515][664]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.42.33:818][682]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.42.33:818][682]LogTemp: Warning: Inside DrawDebug()
+[2022.02.03-11.42.33:915][688]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.42.34:268][709]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.42.34:268][709]LogTemp: Warning: Inside DrawDebug()
+[2022.02.03-11.42.34:381][716]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.42.34:682][734]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.42.34:682][734]LogTemp: Warning: Inside DrawDebug()
+[2022.02.03-11.42.34:764][739]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.42.35:000][753]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.42.35:000][753]LogTemp: Warning: Inside DrawDebug()
+[2022.02.03-11.42.35:097][759]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.42.43:603][269]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.42.43:603][269]LogTemp: Warning: Inside DrawDebug()
+[2022.02.03-11.42.43:715][276]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.42.44:332][313]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.42.44:332][313]LogTemp: Warning: Inside DrawDebug()
+[2022.02.03-11.42.44:414][318]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.42.44:908][345]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.03-11.42.44:908][345]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_Building_Escape
+[2022.02.03-11.42.44:908][345]LogWorld: UWorld::CleanupWorld for Building_Escape, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-11.42.44:908][345]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-11.42.44:920][345]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.02.03-11.42.44:937][345]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-11.42.44:942][345]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.02.03-11.42.44:942][345]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-11.42.44:943][345]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-11.42.44:950][345]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.03-11.42.44:952][345]LogUObjectHash: Compacting FUObjectHashTables data took   0.62ms
+[2022.02.03-11.42.45:083][352]LogPlayLevel: Display: Destroying online subsystem :Context_12
+[2022.02.03-11.44.54:988][410]Candidate modules for hot reload:
+[2022.02.03-11.44.54:988][410]  BuildingEscape
+[2022.02.03-11.44.54:988][410]Launching UnrealBuildTool... [E:/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=BuildingEscape,2099 BuildingEscapeEditor Win64 Development -Project="F:/Programs/UE4/BuildingEscape/BuildingEscape.uproject" "F:/Programs/UE4/BuildingEscape/BuildingEscape.uproject"  -IgnoreJunk]
+[2022.02.03-11.44.54:997][410]Warning: Starting HotReload took  0.0s.
+[2022.02.03-11.46.22:087][592]CompilerResultsLog: New page: Compilation - Feb 3, 2022, 10:46:22 PM
+[2022.02.03-11.46.22:087][592]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (F:\Programs\UE4).
+[2022.02.03-11.46.22:087][592]CompilerResultsLog: Parsing headers for BuildingEscapeEditor
+[2022.02.03-11.46.22:087][592]CompilerResultsLog:   Running UnrealHeaderTool "F:\Programs\UE4\BuildingEscape\BuildingEscape.uproject" "F:\Programs\UE4\BuildingEscape\Intermediate\Build\Win64\BuildingEscapeEditor\Development\BuildingEscapeEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\varun\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2022.02.03-11.46.22:087][592]CompilerResultsLog: LogInit: Display: Loading text-based GConfig....
+[2022.02.03-11.46.22:087][592]CompilerResultsLog: Reflection code generated for BuildingEscapeEditor in 6.4495574 seconds
+[2022.02.03-11.46.22:087][592]CompilerResultsLog: Building BuildingEscapeEditor...
+[2022.02.03-11.46.22:087][592]CompilerResultsLog: Using Visual Studio 2019 14.29.30037 toolchain (V:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.02.03-11.46.22:087][592]CompilerResultsLog: Building 5 actions with 12 processes...
+[2022.02.03-11.46.22:087][592]CompilerResultsLog:   [1/5] grabber.cpp
+[2022.02.03-11.46.22:088][592]CompilerResultsLog:    F:\Programs\UE4\BuildingEscape\Source\BuildingEscape\grabber.cpp(46) : error C2664: 'void UPhysicsHandleComponent::GrabComponentAtLocation(UPrimitiveComponent *,FName,FVector)': cannot convert argument 3 from 'float' to 'FVector'
+[2022.02.03-11.46.22:088][592]CompilerResultsLog:   F:\Programs\UE4\BuildingEscape\Source\BuildingEscape\grabber.cpp(50): note: Constructor for struct 'FVector' is declared 'explicit'
+[2022.02.03-11.46.22:088][592]CompilerResultsLog:   E:\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\PhysicsEngine/PhysicsHandleComponent.h(107): note: see declaration of 'UPhysicsHandleComponent::GrabComponentAtLocation'
+[2022.02.03-11.46.22:088][592]CompilerResultsLog:   [2/5] grabber.gen.cpp
+[2022.02.03-11.46.22:088][592]LogMainFrame: MainFrame: Module compiling took 87.108 seconds
+[2022.02.03-11.46.22:088][592]Warning: HotReload failed, recompile failed
+[2022.02.03-11.47.03:485][ 63]Candidate modules for hot reload:
+[2022.02.03-11.47.03:485][ 63]  BuildingEscape
+[2022.02.03-11.47.03:485][ 63]Launching UnrealBuildTool... [E:/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=BuildingEscape,0758 BuildingEscapeEditor Win64 Development -Project="F:/Programs/UE4/BuildingEscape/BuildingEscape.uproject" "F:/Programs/UE4/BuildingEscape/BuildingEscape.uproject"  -IgnoreJunk]
+[2022.02.03-11.47.03:496][ 63]Warning: Starting HotReload took  0.0s.
+[2022.02.03-11.47.15:247][729]CompilerResultsLog: New page: Compilation - Feb 3, 2022, 10:47:15 PM
+[2022.02.03-11.47.15:247][729]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (F:\Programs\UE4).
+[2022.02.03-11.47.15:247][729]CompilerResultsLog: Building BuildingEscapeEditor...
+[2022.02.03-11.47.15:247][729]CompilerResultsLog: Using Visual Studio 2019 14.29.30037 toolchain (V:\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.02.03-11.47.15:247][729]CompilerResultsLog: Building 4 actions with 12 processes...
+[2022.02.03-11.47.15:247][729]CompilerResultsLog:   [1/4] grabber.cpp
+[2022.02.03-11.47.15:247][729]CompilerResultsLog:   [2/4] UE4Editor-BuildingEscape-0758.lib
+[2022.02.03-11.47.15:247][729]CompilerResultsLog:      Creating library F:\Programs\UE4\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\UE4Editor-BuildingEscape-0758.lib and object F:\Programs\UE4\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\UE4Editor-BuildingEscape-0758.exp
+[2022.02.03-11.47.15:247][729]CompilerResultsLog:   [3/4] UE4Editor-BuildingEscape-0758.dll
+[2022.02.03-11.47.15:247][729]CompilerResultsLog:      Creating library F:\Programs\UE4\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\UE4Editor-BuildingEscape-0758.suppressed.lib and object F:\Programs\UE4\BuildingEscape\Intermediate\Build\Win64\UE4Editor\Development\BuildingEscape\UE4Editor-BuildingEscape-0758.suppressed.exp
+[2022.02.03-11.47.15:247][729]CompilerResultsLog:   [4/4] BuildingEscapeEditor.target
+[2022.02.03-11.47.15:247][729]CompilerResultsLog: Total time in Parallel executor: 10.28 seconds
+[2022.02.03-11.47.15:247][729]CompilerResultsLog: Total execution time: 11.60 seconds
+[2022.02.03-11.47.15:247][729]LogMainFrame: MainFrame: Module compiling took 11.770 seconds
+[2022.02.03-11.47.16:522][729]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'BuildingEscape' in 0.0003 seconds. Added 4 classes and 2 folders.
+[2022.02.03-11.47.16:526][729]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2022.02.03-11.47.16:568][729]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0098 seconds. Added 3826 classes and 930 folders.
+[2022.02.03-11.47.16:571][729]Display: HotReload took 13.1s.
+[2022.02.03-11.47.20:238][944]LogTemp: Repeating last play command: Selected Viewport
+[2022.02.03-11.47.20:251][944]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.02.03-11.47.20:251][944]PIE: New page: PIE session: Building_Escape (Feb 3, 2022, 10:47:20 PM)
+[2022.02.03-11.47.20:251][944]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Building_Escape
+[2022.02.03-11.47.20:259][944]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007216s)
+[2022.02.03-11.47.20:260][944]LogAIModule: Creating AISystem for world Building_Escape
+[2022.02.03-11.47.20:260][944]LogPlayLevel: PIE: World Init took: (0.001441s)
+[2022.02.03-11.47.20:260][944]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Building_Escape.Building_Escape to /Game/Levels/UEDPIE_0_Building_Escape.Building_Escape (0.008818s)
+[2022.02.03-11.47.20:267][944]LogUObjectHash: Compacting FUObjectHashTables data took   0.66ms
+[2022.02.03-11.47.20:268][944]LogAudio: Display: Creating Audio Device:                 Id: 12, Scope: Unique, Realtime: True
+[2022.02.03-11.47.20:268][944]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.02.03-11.47.20:268][944]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.02.03-11.47.20:268][944]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.02.03-11.47.20:268][944]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.02.03-11.47.20:268][944]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.02.03-11.47.20:268][944]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.02.03-11.47.20:268][944]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.02.03-11.47.20:268][944]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.02.03-11.47.20:269][944]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.02.03-11.47.20:269][944]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.02.03-11.47.20:269][944]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.02.03-11.47.20:269][944]LogAudioMixer: Display: Initializing audio mixer.
+[2022.02.03-11.47.20:274][944]LogAudioMixer: Display: 0: FrontLeft
+[2022.02.03-11.47.20:274][944]LogAudioMixer: Display: 1: FrontRight
+[2022.02.03-11.47.20:274][944]LogAudioMixer: Display: 2: FrontCenter
+[2022.02.03-11.47.20:274][944]LogAudioMixer: Display: 3: LowFrequency
+[2022.02.03-11.47.20:274][944]LogAudioMixer: Display: 4: BackLeft
+[2022.02.03-11.47.20:274][944]LogAudioMixer: Display: 5: BackRight
+[2022.02.03-11.47.20:274][944]LogAudioMixer: Display: 6: SideLeft
+[2022.02.03-11.47.20:274][944]LogAudioMixer: Display: 7: SideRight
+[2022.02.03-11.47.20:327][944]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2022.02.03-11.47.20:327][944]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.02.03-11.47.20:327][944]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.02.03-11.47.20:327][944]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.02.03-11.47.20:328][944]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.02.03-11.47.20:328][944]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.02.03-11.47.20:328][944]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2022.02.03-11.47.20:330][944]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.02.03-11.47.20:330][944]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.02.03-11.47.20:330][944]LogInit: FAudioDevice initialized.
+[2022.02.03-11.47.20:330][944]LogAudio: Display: Audio Device (ID: 12) registered with world 'Building_Escape'.
+[2022.02.03-11.47.20:344][944]LogLoad: Game class is 'BP_MyBuildingEscapeGameModeBase_C'
+[2022.02.03-11.47.20:345][944]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Building_Escape.Building_Escape up for play (max tick rate 0) at 2022.02.03-17.17.20
+[2022.02.03-11.47.20:346][944]LogWorld: Bringing up level for play took: 0.001122
+[2022.02.03-11.47.20:346][944]LogOnline: OSS: Creating online subsystem instance for: :Context_13
+[2022.02.03-11.47.20:348][944]PIE: Server logged in
+[2022.02.03-11.47.20:349][944]PIE: Play in editor total start time 0.102 seconds.
+[2022.02.03-11.47.22:287][ 60]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.47.22:369][ 65]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.47.23:738][147]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.47.23:738][147]LogTemp: Warning: Inside DrawDebug()
+[2022.02.03-11.47.24:605][199]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.47.25:171][233]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.47.25:171][233]LogTemp: Warning: Inside DrawDebug()
+[2022.02.03-11.47.25:237][237]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.47.26:670][323]LogTemp: Warning: Grabber function called!
+[2022.02.03-11.47.26:670][323]LogTemp: Warning: Inside DrawDebug()
+[2022.02.03-11.47.30:870][575]LogTemp: Warning: Grabber function released!
+[2022.02.03-11.47.32:217][653]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.03-11.47.32:217][653]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_Building_Escape
+[2022.02.03-11.47.32:217][653]LogWorld: UWorld::CleanupWorld for Building_Escape, bSessionEnded=true, bCleanupResources=true
+[2022.02.03-11.47.32:217][653]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-11.47.32:226][653]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.02.03-11.47.32:242][653]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.02.03-11.47.32:248][653]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.02.03-11.47.32:248][653]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-11.47.32:249][653]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.02.03-11.47.32:275][653]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.02.03-11.47.32:277][653]LogUObjectHash: Compacting FUObjectHashTables data took   0.62ms
+[2022.02.03-11.47.32:411][660]LogPlayLevel: Display: Destroying online subsystem :Context_13
