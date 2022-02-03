@@ -57,6 +57,10 @@ void EmptyLinkFunctionForGeneratedCodedoorControl() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_actorThatOpens_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_actorThatOpens;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_maxMassRequired_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_maxMassRequired;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -127,6 +131,13 @@ void EmptyLinkFunctionForGeneratedCodedoorControl() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UdoorControl_Statics::NewProp_actorThatOpens = { "actorThatOpens", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UdoorControl, actorThatOpens), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UdoorControl_Statics::NewProp_actorThatOpens_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UdoorControl_Statics::NewProp_actorThatOpens_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UdoorControl_Statics::NewProp_maxMassRequired_MetaData[] = {
+		{ "Category", "doorControl" },
+		{ "ModuleRelativePath", "doorControl.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UdoorControl_Statics::NewProp_maxMassRequired = { "maxMassRequired", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UdoorControl, maxMassRequired), METADATA_PARAMS(Z_Construct_UClass_UdoorControl_Statics::NewProp_maxMassRequired_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UdoorControl_Statics::NewProp_maxMassRequired_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UdoorControl_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UdoorControl_Statics::NewProp_targetYaw,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UdoorControl_Statics::NewProp_doorDelayTime,
@@ -134,6 +145,7 @@ void EmptyLinkFunctionForGeneratedCodedoorControl() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UdoorControl_Statics::NewProp_doorOpenSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UdoorControl_Statics::NewProp_doorPressurePlate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UdoorControl_Statics::NewProp_actorThatOpens,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UdoorControl_Statics::NewProp_maxMassRequired,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UdoorControl_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UdoorControl>::IsAbstract,
@@ -162,7 +174,7 @@ void EmptyLinkFunctionForGeneratedCodedoorControl() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UdoorControl, 3575508220);
+	IMPLEMENT_CLASS(UdoorControl, 1851743278);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UdoorControl>()
 	{
 		return UdoorControl::StaticClass();

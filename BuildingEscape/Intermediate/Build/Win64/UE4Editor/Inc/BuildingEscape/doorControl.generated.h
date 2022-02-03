@@ -64,7 +64,8 @@ public: \
 	FORCEINLINE static uint32 __PPO__doorCloseSpeed() { return STRUCT_OFFSET(UdoorControl, doorCloseSpeed); } \
 	FORCEINLINE static uint32 __PPO__doorOpenSpeed() { return STRUCT_OFFSET(UdoorControl, doorOpenSpeed); } \
 	FORCEINLINE static uint32 __PPO__doorPressurePlate() { return STRUCT_OFFSET(UdoorControl, doorPressurePlate); } \
-	FORCEINLINE static uint32 __PPO__actorThatOpens() { return STRUCT_OFFSET(UdoorControl, actorThatOpens); }
+	FORCEINLINE static uint32 __PPO__actorThatOpens() { return STRUCT_OFFSET(UdoorControl, actorThatOpens); } \
+	FORCEINLINE static uint32 __PPO__maxMassRequired() { return STRUCT_OFFSET(UdoorControl, maxMassRequired); }
 
 
 #define BuildingEscape_Source_BuildingEscape_doorControl_h_11_PROLOG

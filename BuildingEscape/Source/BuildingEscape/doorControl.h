@@ -32,6 +32,7 @@ private:
 	// Declaring function(s)
 	void openDoor(float);
 	void closeDoor(float);
+	float totalMassOfActors() const;
 
 	UPROPERTY(EditAnywhere)
 	// Giving default value
@@ -62,4 +63,6 @@ private:
 	UPROPERTY(EditAnywhere)
 	AActor* actorThatOpens;
 	
+	UPROPERTY(EditAnywhere)
+	float maxMassRequired = 10.f;
 };
