@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Components/AudioComponent.h"
 #include "Components/ActorComponent.h"
 #include "Engine/TriggerVolume.h"
 #include "doorControl.generated.h"
@@ -33,6 +34,9 @@ private:
 	void openDoor(float);
 	void closeDoor(float);
 	float totalMassOfActors() const;
+	void getAudioComponent();
+	void checkPressurePlate();
+	void findPressurePlate();
 
 	UPROPERTY(EditAnywhere)
 	// Giving default value
@@ -53,15 +57,14 @@ private:
 	// To define Door Open Speed
 	UPROPERTY(EditAnywhere)
 	float doorOpenSpeed = 2.f;
-	UPROPERTY(EditAnywhere)
 	
 	// Actors
 	// Getting the Trigger Volume
-	ATriggerVolume* doorPressurePlate;
-
-	// TO access the actor within the volume in code
 	UPROPERTY(EditAnywhere)
-	AActor* actorThatOpens;
+	ATriggerVolume* doorPressurePlate = nullptr;
+
+	UPROPERTY()
+	UAudioComponent* audioComponent = nullptr;
 	
 	UPROPERTY(EditAnywhere)
 	float maxMassRequired = 10.f;

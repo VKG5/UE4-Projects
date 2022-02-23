@@ -37,12 +37,15 @@ void Ugrabber::Grab()
 	// TOOD Only RayCast when a a certain button is pressed and try and reach any actors with physics body collision channel set
 	FHitResult hitActor = getHitResult();
 	UPrimitiveComponent* componentToGrab = hitActor.GetComponent();
+	AActor* actorHit = hitActor.GetActor();
 
 	// If we hit something then attach physics handle
 	// TODO Attach Physics Handle
 	// Check if we are hitting an actor
-	if(hitActor.GetActor())
+	if(actorHit)
 	{
+		if (!physicsHandle) { return; }
+
 		physicsHandle->GrabComponentAtLocation(
 			componentToGrab,
 			NAME_None,
@@ -55,6 +58,8 @@ void Ugrabber::Release()
 {
 	// Debugging
 	UE_LOG(LogTemp, Warning, TEXT("Grabber function released!"));
+
+	if (!physicsHandle) { return; }
 
 	// If we have something in our hand currently
 	if (physicsHandle->GetGrabbedComponent())
@@ -182,6 +187,8 @@ FVector Ugrabber::getLineEndPoint()
 void Ugrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+
+	if (!physicsHandle) { return; }
 
 	// If physics handle is attached
 	if (physicsHandle->GrabbedComponent)

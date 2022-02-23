@@ -30,7 +30,10 @@ private:
 	bool debugLineFlag = false;
 
 	// To ensure no issues if unassigned, we use nullptr
+	UPROPERTY()
 	UPhysicsHandleComponent* physicsHandle = nullptr;
+	
+	UPROPERTY()
 	UInputComponent* inputComponent = nullptr;
 
 	// Custom functions

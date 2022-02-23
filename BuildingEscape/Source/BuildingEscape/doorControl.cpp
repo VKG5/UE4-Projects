@@ -19,7 +19,6 @@ UdoorControl::UdoorControl()
 	// ...
 }
 
-
 // Called when the game starts
 void UdoorControl::BeginPlay()
 {
@@ -30,16 +29,95 @@ void UdoorControl::BeginPlay()
 	currentYaw = initialYaw;
 	targetYaw += initialYaw;
 
+	// Checking for Pressure Plate component
+	findPressurePlate();
+
+	// Checking if the Audio Component is present or not
+	getAudioComponent();
+}
+
+void UdoorControl::findPressurePlate()
+{
 	// Prevent Nullptr exception 
 	if (!doorPressurePlate)
 	{
 		// Debugging 
 		UE_LOG(LogTemp, Error, TEXT("**NULLPTR, please assign a component to the exposed field(s) in actor(s) : %s**"), *GetOwner()->GetName());
+		return;
 	}
-
-	actorThatOpens = GetWorld()->GetFirstPlayerController()->GetPawn();
 }
 
+void UdoorControl::openDoor(float DeltaTime)
+{
+	// Debugging
+	//UE_LOG(LogTemp, Warning, TEXT("%s"), *GetOwner()->GetActorRotation().ToString());
+	//UE_LOG(LogTemp, Warning, TEXT("Yaw is : %f"), GetOwner()->GetActorRotation().Yaw);
+
+	currentYaw = FMath::FInterpTo(currentYaw, targetYaw, DeltaTime, doorOpenSpeed);
+
+	FRotator openDoor = GetOwner()->GetActorRotation();
+
+	openDoor.Yaw = currentYaw;
+
+	audioComponent->Play();
+
+	GetOwner()->SetActorRotation(openDoor);
+}
+
+void UdoorControl::closeDoor(float DeltaTime)
+{
+	// Debugging
+	//UE_LOG(LogTemp, Warning, TEXT("%s"), *GetOwner()->GetActorRotation().ToString());
+	//UE_LOG(LogTemp, Warning, TEXT("Yaw is : %f"), GetOwner()->GetActorRotation().Yaw);
+
+	currentYaw = FMath::FInterpTo(currentYaw, initialYaw, DeltaTime, doorCloseSpeed);
+
+	FRotator closeDoor = GetOwner()->GetActorRotation();
+
+	closeDoor.Yaw = currentYaw;
+
+	GetOwner()->SetActorRotation(closeDoor);
+
+	audioComponent->Play();
+}
+
+float UdoorControl::totalMassOfActors() const
+{
+	float totalMass = 0.f;
+
+	// Find all physics objects in the scene, overlapping with the volume
+	TArray<AActor*> overlappingActors = { nullptr };
+	
+	if (!doorPressurePlate) { return totalMass; }
+
+	doorPressurePlate->GetOverlappingActors(
+		OUT overlappingActors
+	);
+
+	for (auto actor : overlappingActors)
+	{
+		// Debugging
+		//UE_LOG(LogTemp, Warning, TEXT("Actor Found\n"));/
+		if (!actor) { continue; }
+
+		totalMass += actor->FindComponentByClass<UPrimitiveComponent>()->GetMass();
+	}
+
+	// Sum up their total mass
+
+	return totalMass;
+}
+
+void UdoorControl::getAudioComponent()
+{
+	audioComponent = GetOwner()->FindComponentByClass<UAudioComponent>();
+
+	if (!audioComponent) 
+	{
+		UE_LOG(LogTemp, Error, TEXT("No Audio Component on object : %s"), *GetOwner()->GetName());
+		return; 
+	}
+}
 
 // Called every frame
 void UdoorControl::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
@@ -63,60 +141,4 @@ void UdoorControl::TickComponent(float DeltaTime, ELevelTick TickType, FActorCom
 			closeDoor(DeltaTime);
 		}
 	}
-
-	
-}
-
-void UdoorControl::openDoor(float DeltaTime)
-{
-	// Debugging
-	//UE_LOG(LogTemp, Warning, TEXT("%s"), *GetOwner()->GetActorRotation().ToString());
-	//UE_LOG(LogTemp, Warning, TEXT("Yaw is : %f"), GetOwner()->GetActorRotation().Yaw);
-
-	currentYaw = FMath::FInterpTo(currentYaw, targetYaw, DeltaTime, doorOpenSpeed);
-
-	FRotator openDoor = GetOwner()->GetActorRotation();
-
-	openDoor.Yaw = currentYaw;
-
-	GetOwner()->SetActorRotation(openDoor);
-}
-
-void UdoorControl::closeDoor(float DeltaTime)
-{
-	// Debugging
-	//UE_LOG(LogTemp, Warning, TEXT("%s"), *GetOwner()->GetActorRotation().ToString());
-	//UE_LOG(LogTemp, Warning, TEXT("Yaw is : %f"), GetOwner()->GetActorRotation().Yaw);
-
-	currentYaw = FMath::FInterpTo(currentYaw, initialYaw, DeltaTime, doorCloseSpeed);
-
-	FRotator closeDoor = GetOwner()->GetActorRotation();
-
-	closeDoor.Yaw = currentYaw;
-
-	GetOwner()->SetActorRotation(closeDoor);
-}
-
-float UdoorControl::totalMassOfActors() const
-{
-	float totalMass = 0.f;
-
-	// Find all physics objects in the scene, overlapping with the volume
-	TArray<AActor*> overlappingActors;
-
-	doorPressurePlate->GetOverlappingActors(
-		OUT overlappingActors
-	);
-
-	for (auto actor : overlappingActors)
-	{
-		// Debugging
-		//UE_LOG(LogTemp, Warning, TEXT("Actor Found\n"));/
-
-		totalMass += actor->FindComponentByClass<UPrimitiveComponent>()->GetMass();
-	}
-
-	// Sum up their total mass
-
-	return totalMass;
 }

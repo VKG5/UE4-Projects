@@ -58,7 +58,11 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(Ugrabber)
 
 
-#define BuildingEscape_Source_BuildingEscape_grabber_h_14_PRIVATE_PROPERTY_OFFSET
+#define BuildingEscape_Source_BuildingEscape_grabber_h_14_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__physicsHandle() { return STRUCT_OFFSET(Ugrabber, physicsHandle); } \
+	FORCEINLINE static uint32 __PPO__inputComponent() { return STRUCT_OFFSET(Ugrabber, inputComponent); }
+
+
 #define BuildingEscape_Source_BuildingEscape_grabber_h_11_PROLOG
 #define BuildingEscape_Source_BuildingEscape_grabber_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

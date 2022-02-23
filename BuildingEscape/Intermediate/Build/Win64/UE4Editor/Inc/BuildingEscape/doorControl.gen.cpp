@@ -18,7 +18,7 @@ void EmptyLinkFunctionForGeneratedCodedoorControl() {}
 	ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
 	UPackage* Z_Construct_UPackage__Script_BuildingEscape();
 	ENGINE_API UClass* Z_Construct_UClass_ATriggerVolume_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UAudioComponent_NoRegister();
 // End Cross Module References
 	void UdoorControl::StaticRegisterNativesUdoorControl()
 	{
@@ -54,9 +54,9 @@ void EmptyLinkFunctionForGeneratedCodedoorControl() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_doorPressurePlate;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_actorThatOpens_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_audioComponent_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_actorThatOpens;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_audioComponent;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_maxMassRequired_MetaData[];
 #endif
@@ -123,14 +123,12 @@ void EmptyLinkFunctionForGeneratedCodedoorControl() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UdoorControl_Statics::NewProp_doorPressurePlate = { "doorPressurePlate", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UdoorControl, doorPressurePlate), Z_Construct_UClass_ATriggerVolume_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UdoorControl_Statics::NewProp_doorPressurePlate_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UdoorControl_Statics::NewProp_doorPressurePlate_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UdoorControl_Statics::NewProp_actorThatOpens_MetaData[] = {
-		{ "Category", "doorControl" },
-		{ "Comment", "// TO access the actor within the volume in code\n" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UdoorControl_Statics::NewProp_audioComponent_MetaData[] = {
+		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "doorControl.h" },
-		{ "ToolTip", "TO access the actor within the volume in code" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UdoorControl_Statics::NewProp_actorThatOpens = { "actorThatOpens", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UdoorControl, actorThatOpens), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UdoorControl_Statics::NewProp_actorThatOpens_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UdoorControl_Statics::NewProp_actorThatOpens_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UdoorControl_Statics::NewProp_audioComponent = { "audioComponent", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UdoorControl, audioComponent), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UdoorControl_Statics::NewProp_audioComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UdoorControl_Statics::NewProp_audioComponent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UdoorControl_Statics::NewProp_maxMassRequired_MetaData[] = {
 		{ "Category", "doorControl" },
@@ -144,7 +142,7 @@ void EmptyLinkFunctionForGeneratedCodedoorControl() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UdoorControl_Statics::NewProp_doorCloseSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UdoorControl_Statics::NewProp_doorOpenSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UdoorControl_Statics::NewProp_doorPressurePlate,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UdoorControl_Statics::NewProp_actorThatOpens,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UdoorControl_Statics::NewProp_audioComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UdoorControl_Statics::NewProp_maxMassRequired,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UdoorControl_Statics::StaticCppClassTypeInfo = {
@@ -174,7 +172,7 @@ void EmptyLinkFunctionForGeneratedCodedoorControl() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UdoorControl, 1851743278);
+	IMPLEMENT_CLASS(UdoorControl, 2650178149);
 	template<> BUILDINGESCAPE_API UClass* StaticClass<UdoorControl>()
 	{
 		return UdoorControl::StaticClass();
