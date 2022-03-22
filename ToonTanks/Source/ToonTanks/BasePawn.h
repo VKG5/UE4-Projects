@@ -30,4 +30,11 @@ private:
 	// Forward Declaration - Include as little as you can in the header file
 	UPROPERTY(EditAnywhere)
 	class UCapsuleComponent* capsuleComponent;
+	UPROPERTY(EditAnywhere)
+	class UStaticMeshComponent* baseMesh;
+	UPROPERTY(EditAnywhere)
+	class UStaticMeshComponent* turretMesh;
+
+	UPROPERTY(EditAnywhere)
+	class USceneComponent* projectileSpawn;
 };
