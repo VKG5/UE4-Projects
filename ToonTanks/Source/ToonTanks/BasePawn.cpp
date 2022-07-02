@@ -3,6 +3,7 @@
 
 #include "BasePawn.h"
 #include "Components/CapsuleComponent.h"
+#include "DrawDebugHelpers.h"
 
 // Sets default values
 ABasePawn::ABasePawn()
@@ -31,24 +32,31 @@ ABasePawn::ABasePawn()
 	projectileSpawn->SetupAttachment(turretMesh);
 }
 
-// Called when the game starts or when spawned
-void ABasePawn::BeginPlay()
+void ABasePawn::rotateTurret(FVector targetLocation)
 {
-	Super::BeginPlay();
+	// Getting the object location
+	FVector turretLocation = turretMesh->GetComponentLocation();
+
+	FVector toTarget = targetLocation - turretLocation;
+
+	// Converting the vector into rotator
+	// Getting only the Yaw rotation, since the turret will only rotate along Yaw
+	FRotator targetRotation(0.f, toTarget.Rotation().Yaw, 0.f);
 	
+	turretMesh->SetWorldRotation(targetRotation);
 }
 
-// Called every frame
-void ABasePawn::Tick(float DeltaTime)
+void ABasePawn::fireProjectile()
 {
-	Super::Tick(DeltaTime);
-
+	//// Debugging
+	// Drawing a Debug Sphere at the point of collision/contact
+	DrawDebugSphere(
+		GetWorld(),
+		projectileSpawn->GetComponentLocation(),
+		8.f,
+		16,
+		FColor::Red,
+		false,
+		10.f
+	);
 }
-
-// Called to bind functionality to input
-void ABasePawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
-{
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
-
-}
-

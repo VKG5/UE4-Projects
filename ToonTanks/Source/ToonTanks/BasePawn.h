@@ -16,25 +16,24 @@ public:
 	ABasePawn();
 
 protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
+	// Rotating the turret
+	void rotateTurret(FVector targetLocation);
 
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
-	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	// Fire Projectiles function
+	void fireProjectile();
 
 private:
 	// Forward Declaration - Include as little as you can in the header file
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "True"))
 	class UCapsuleComponent* capsuleComponent;
-	UPROPERTY(EditAnywhere)
+
+	// These are already included in the Pawn class
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "True"))
 	class UStaticMeshComponent* baseMesh;
-	UPROPERTY(EditAnywhere)
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "True"))
 	class UStaticMeshComponent* turretMesh;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "True"))
 	class USceneComponent* projectileSpawn;
 };
