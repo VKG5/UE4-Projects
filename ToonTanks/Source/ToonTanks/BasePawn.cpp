@@ -4,6 +4,7 @@
 #include "BasePawn.h"
 #include "Components/CapsuleComponent.h"
 #include "DrawDebugHelpers.h"
+#include "Projectile.h"
 
 // Sets default values
 ABasePawn::ABasePawn()
@@ -50,7 +51,7 @@ void ABasePawn::fireProjectile()
 {
 	//// Debugging
 	// Drawing a Debug Sphere at the point of collision/contact
-	DrawDebugSphere(
+	/*DrawDebugSphere(
 		GetWorld(),
 		projectileSpawn->GetComponentLocation(),
 		16.f,
@@ -58,5 +59,7 @@ void ABasePawn::fireProjectile()
 		FColor::Red,
 		false,
 		10.f
-	);
+	);*/
+
+	GetWorld()->SpawnActor<AProjectile>(projectileClass, projectileSpawn->GetComponentLocation(), projectileSpawn->GetComponentRotation());
 }
