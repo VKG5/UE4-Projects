@@ -53,7 +53,7 @@ void ABasePawn::fireProjectile()
 	DrawDebugSphere(
 		GetWorld(),
 		projectileSpawn->GetComponentLocation(),
-		8.f,
+		16.f,
 		16,
 		FColor::Red,
 		false,

@@ -28,4 +28,15 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "Movement")
 	float towerRange = 250.f;
+
+	FTimerHandle fireRateTimerHandle;
+
+	UPROPERTY(EditAnywhere, Category = "Projectile")
+	float fireRate = 1.f;
+
+	// Callback function
+	void checkFireCondition();
+
+	// Check if the target is in fire range
+	bool inFireRange();
 };
