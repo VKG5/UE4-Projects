@@ -5,6 +5,12 @@
 #include "Tank.h"
 #include "Kismet/GameplayStatics.h"
 
+void ATower::handleDestruction()
+{
+	Super::handleDestruction();
+	Destroy();
+}
+
 // Called when the game starts or when spawned
 void ATower::BeginPlay()
 {

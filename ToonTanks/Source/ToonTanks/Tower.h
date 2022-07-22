@@ -15,6 +15,7 @@ class TOONTANKS_API ATower : public ABasePawn
 	GENERATED_BODY()
 	
 public:
+	void handleDestruction();
 
 protected:
 	// Called every frame

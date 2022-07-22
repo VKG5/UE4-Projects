@@ -33,6 +33,11 @@ ABasePawn::ABasePawn()
 	projectileSpawn->SetupAttachment(turretMesh);
 }
 
+void ABasePawn::handleDestruction()
+{
+	// TODO Visual/Sound effects
+}
+
 void ABasePawn::rotateTurret(FVector targetLocation)
 {
 	// Getting the object location
@@ -61,5 +66,7 @@ void ABasePawn::fireProjectile()
 		10.f
 	);*/
 
-	GetWorld()->SpawnActor<AProjectile>(projectileClass, projectileSpawn->GetComponentLocation(), projectileSpawn->GetComponentRotation());
+	auto projectile = GetWorld()->SpawnActor<AProjectile>(projectileClass, projectileSpawn->GetComponentLocation(), projectileSpawn->GetComponentRotation());
+	// Setting the tank/turret as the owner
+	projectile->SetOwner(this);
 }

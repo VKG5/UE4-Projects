@@ -32,4 +32,7 @@ private:
 	// Callback function
 	UFUNCTION()
 	void onHit(UPrimitiveComponent* hitComp, AActor* otherActor, UPrimitiveComponent* otherComp, FVector normalImpulse, const FHitResult& hit);
+	
+	UPROPERTY(EditAnywhere)
+	float damage = 50.f;
 };

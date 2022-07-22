@@ -21,6 +21,11 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	void handleDestruction();
+
+	// Getter function
+	APlayerController* getPlayerController() const;
+
 protected: 
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -38,11 +43,11 @@ private:
 	class USpringArmComponent* springArmComp;
 
 	// Speed Factor
-	UPROPERTY(EditInstanceOnly, Category = "Movement")
+	UPROPERTY(EditDefaultsOnly, Category = "Movement")
 	float tankSpeed = 250.f;
 
 	// Speed Factor
-	UPROPERTY(EditInstanceOnly, Category = "Movement")
+	UPROPERTY(EditDefaultsOnly, Category = "Movement")
 	float turnSpeed = 250.f;
 
 	// Move Function 
@@ -52,5 +57,5 @@ private:
 	void Turn(float Value);
 
 	// Setting up a player componet 
-	APlayerController* playerController;
+	APlayerController* tankPlayerController;
 };

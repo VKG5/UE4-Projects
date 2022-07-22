@@ -3,6 +3,7 @@
 
 #include "Projectile.h"
 #include "GameFramework/ProjectileMovementComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 AProjectile::AProjectile()
@@ -32,9 +33,28 @@ void AProjectile::BeginPlay()
 
 void AProjectile::onHit(UPrimitiveComponent* hitComp, AActor* otherActor, UPrimitiveComponent* otherComp, FVector normalImpulse, const FHitResult& hit)
 {
-	// Debugging
-	UE_LOG(LogTemp, Warning, TEXT("On Hit Event"));
-	UE_LOG(LogTemp, Warning, TEXT("\nHitComp : %s\nOtherActor : %s\nOtherComp : %s"), *hitComp->GetName(), *otherActor->GetName(), *otherComp->GetName());
+	//// Debugging
+	//UE_LOG(LogTemp, Warning, TEXT("On Hit Event"));
+	//UE_LOG(LogTemp, Warning, TEXT("\nHitComp : %s\nOtherActor : %s\nOtherComp : %s"), *hitComp->GetName(), *otherActor->GetName(), *otherComp->GetName());
+	
+	// Get the owner
+	auto myOwner = GetOwner();
+
+	if (myOwner == nullptr) return;
+
+	auto myOwnerInstigator = myOwner->GetInstigatorController();
+	auto damageTypeClass = UDamageType::StaticClass();
+
+	// Checking validity of hit actor, hit actor is not the parent or owner
+	if (otherActor && otherActor != this && otherActor != myOwner)
+	{
+		UGameplayStatics::ApplyDamage(otherActor, damage, myOwnerInstigator, this, damageTypeClass);
+		// Destroying the projectile
+		Destroy();
+	}
+
+	// If we hit own actor or actor hit is invalid, destroy the projectile
+	else Destroy();
 }
 
 // Called every frame

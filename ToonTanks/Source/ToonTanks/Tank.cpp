@@ -21,17 +21,32 @@ ATank::ATank()
 	cameraComp->SetupAttachment(springArmComp);
 }
 
+void ATank::handleDestruction()
+{
+	Super::handleDestruction();
+
+	// Hiding the tank instead of destroying it
+	SetActorHiddenInGame(true);
+	// Will stop reading it every frame
+	SetActorTickEnabled(false);
+}
+
+APlayerController* ATank::getPlayerController() const
+{
+	return tankPlayerController;
+}
+
 // Called every frame
 void ATank::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
 	// Checking if PlayerController if valid
-	if (playerController)
+	if (tankPlayerController)
 	{
 		FHitResult hitResult;
 		// Specifying Visibility channel used for checking hit (ECC - ECollisionChannel
-		playerController->GetHitResultUnderCursor (
+		tankPlayerController->GetHitResultUnderCursor (
 			ECollisionChannel::ECC_Visibility,
 			false,
 			hitResult
@@ -58,7 +73,7 @@ void ATank::BeginPlay()
 {
 	Super::BeginPlay();
 
-	playerController = Cast<APlayerController>(GetController());
+	tankPlayerController = Cast<APlayerController>(GetController());
 }
 
 // Called to bind functionality to input
