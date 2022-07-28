@@ -20,7 +20,22 @@ public:
 private:
 	class ATank* tank;
 
+	class AtoonTanksPlayerController* toonTanksPlayerController;
+
+	float startDelay = 3.f;
+
+	void handleGameStart();
+
+	int32 targetTowerCount = 0;
+	int32 getTargetTowerCount();
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void startGame();
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void gameOver(bool bWonGame);
 };
