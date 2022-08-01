@@ -41,4 +41,13 @@ private:
 
 	UPROPERTY(EditDefaultsOnly, Category = "Components")
 	TSubclassOf<class AProjectile> projectileClass;
+
+	UPROPERTY(EditAnywhere, Category = "Components")
+	class UParticleSystem* deathParticles;
+
+	UPROPERTY(EditAnywhere, Category = "Components")
+	class USoundBase* deathSound;
+
+	UPROPERTY(EditAnywhere, Category = "Components")
+	TSubclassOf<class UCameraShakeBase> deathCameraShakeClass;
 };

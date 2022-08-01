@@ -4,6 +4,8 @@
 #include "Projectile.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Kismet/GameplayStatics.h"
+#include "Particles/ParticleSystemComponent.h"
+#include "Particles/ParticleSystem.h"
 
 // Sets default values
 AProjectile::AProjectile()
@@ -20,6 +22,10 @@ AProjectile::AProjectile()
 	projectileMovementComponent = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("Projectile Movement Component"));
 	projectileMovementComponent->MaxSpeed = 1300.f;
 	projectileMovementComponent->InitialSpeed = 1000.f;
+
+	// Initializing the trail particle system and attaching it to the root
+	trailParticles = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("Trail Particles"));
+	trailParticles->SetupAttachment(RootComponent);
 }
 
 // Called when the game starts or when spawned
@@ -29,6 +35,11 @@ void AProjectile::BeginPlay()
 	
 	// Bounding to delegate
 	baseMesh->OnComponentHit.AddDynamic(this, &AProjectile::onHit);
+
+	if (launchSound)
+	{
+		UGameplayStatics::PlaySoundAtLocation(this, launchSound, GetActorLocation(), GetActorRotation());
+	}
 }
 
 void AProjectile::onHit(UPrimitiveComponent* hitComp, AActor* otherActor, UPrimitiveComponent* otherComp, FVector normalImpulse, const FHitResult& hit)
@@ -40,7 +51,11 @@ void AProjectile::onHit(UPrimitiveComponent* hitComp, AActor* otherActor, UPrimi
 	// Get the owner
 	auto myOwner = GetOwner();
 
-	if (myOwner == nullptr) return;
+	if (myOwner == nullptr)
+	{
+		Destroy();
+		return;
+	}
 
 	auto myOwnerInstigator = myOwner->GetInstigatorController();
 	auto damageTypeClass = UDamageType::StaticClass();
@@ -49,12 +64,28 @@ void AProjectile::onHit(UPrimitiveComponent* hitComp, AActor* otherActor, UPrimi
 	if (otherActor && otherActor != this && otherActor != myOwner)
 	{
 		UGameplayStatics::ApplyDamage(otherActor, damage, myOwnerInstigator, this, damageTypeClass);
-		// Destroying the projectile
-		Destroy();
+		if (hitParticles)
+		{
+			// Spawing the smoke/particle effect
+			UGameplayStatics::SpawnEmitterAtLocation(this, hitParticles, GetActorLocation(), GetActorRotation());
+			
+			// Sound effects
+			if (hitSound)
+			{
+				UGameplayStatics::PlaySoundAtLocation(this, hitSound, GetActorLocation(), GetActorRotation());
+
+				// Camera shake
+				if (hitCameraShakeClass)
+				{
+					GetWorld()->GetFirstPlayerController()->ClientStartCameraShake(hitCameraShakeClass);
+				}
+			}
+		}
 	}
 
 	// If we hit own actor or actor hit is invalid, destroy the projectile
-	else Destroy();
+	// Destroying the projectile in any case
+	Destroy();
 }
 
 // Called every frame
