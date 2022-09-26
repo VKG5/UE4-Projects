@@ -82,3 +82,9 @@ Build/*/**
 # VSCode Files
 /.vscode/*
 BuildingEscape.code-workspace
+ShooterAssetPack/
+SimpleShooter/Content/
+
+# Ignoring .zip files
+*.zip
+*.rar
